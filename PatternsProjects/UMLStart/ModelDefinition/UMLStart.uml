@@ -62,6 +62,10 @@
                 Id="6edeaccc-1478-4834-99f7-9fa75b49812b"
                 LastKnownName="MessageOccurrenceSpecification10"
                 LastKnownLocation="UMLStart.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="bc26f57c-1e1f-4331-baeb-9b91d147ad35"
+                LastKnownName="OperandOccurrenceSpecification3"
+                LastKnownLocation="UMLStart.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="d4720a8d-f36b-442e-94ac-dd01a0029eb2"
                 LastKnownName="MessageOccurrenceSpecification11"
@@ -69,6 +73,10 @@
               <messageOccurrenceSpecificationMoniker
                 Id="77586829-900b-4d67-b080-47d023b3410f"
                 LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="UMLStart.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="794b20f6-685f-4814-8956-99d182e84856"
+                LastKnownName="OperandOccurrenceSpecification4"
                 LastKnownLocation="UMLStart.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="3633d767-a841-4a07-93ac-27cf7805357d"
@@ -215,6 +223,91 @@
                 LastKnownLocation="UMLStart.uml" />
             </covered>
           </executionOccurrenceSpecification>
+          <combinedFragment
+            Id="4050ba87-ef7f-4ccd-b1dc-f9938239f5b0"
+            name="CombinedFragment1"
+            interactionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0d112185-1d82-4e7a-b1e1-1776ccfa38be"
+                LastKnownName="doc : Document"
+                LastKnownLocation="UMLStart.uml" />
+              <lifelineMoniker
+                Id="20a72bf7-71ee-4664-a36e-b849eb6776e3"
+                LastKnownName="Program"
+                LastKnownLocation="UMLStart.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="e4deb8b0-c044-4b8b-a306-2573c2c4607f"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="0d112185-1d82-4e7a-b1e1-1776ccfa38be"
+                    LastKnownName="doc : Document"
+                    LastKnownLocation="UMLStart.uml" />
+                  <lifelineMoniker
+                    Id="20a72bf7-71ee-4664-a36e-b849eb6776e3"
+                    LastKnownName="Program"
+                    LastKnownLocation="UMLStart.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="3b35186b-d34b-4457-8148-b1044c31dfb8"
+                    guardText="1000">
+                    <maxInt>
+                      <literalString
+                        Id="a954c3db-9db8-4d3a-a0a3-490c95252f00"
+                        name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString
+                        Id="7fbbeaff-63fa-48c7-9edb-ea534052e61e"
+                        name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="2341a883-d447-426a-9509-a675064ddc3f"
+                    LastKnownName="OperandOccurrenceSpecification1"
+                    LastKnownLocation="UMLStart.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="c491ada4-2385-4741-8bb0-725d842e4743"
+                    LastKnownName="OperandOccurrenceSpecification2"
+                    LastKnownLocation="UMLStart.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="bc26f57c-1e1f-4331-baeb-9b91d147ad35"
+                    LastKnownName="OperandOccurrenceSpecification3"
+                    LastKnownLocation="UMLStart.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="794b20f6-685f-4814-8956-99d182e84856"
+                    LastKnownName="OperandOccurrenceSpecification4"
+                    LastKnownLocation="UMLStart.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="bc26f57c-1e1f-4331-baeb-9b91d147ad35"
+            name="OperandOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="20a72bf7-71ee-4664-a36e-b849eb6776e3"
+                LastKnownName="Program"
+                LastKnownLocation="UMLStart.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="2341a883-d447-426a-9509-a675064ddc3f"
+            name="OperandOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="0d112185-1d82-4e7a-b1e1-1776ccfa38be"
+                LastKnownName="doc : Document"
+                LastKnownLocation="UMLStart.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="885a105f-bf7b-4f4f-8908-4a6cd86eeb2d"
             name="BehaviorExecutionSpecification4">
@@ -266,22 +359,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="d4720a8d-f36b-442e-94ac-dd01a0029eb2"
-            name="MessageOccurrenceSpecification11">
-            <covered>
-              <lifelineMoniker
-                Id="20a72bf7-71ee-4664-a36e-b849eb6776e3"
-                LastKnownName="Program"
-                LastKnownLocation="UMLStart.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="df32d2eb-ec51-4f33-8c6b-6c360647f60e"
             name="MessageOccurrenceSpecification12">
             <covered>
               <lifelineMoniker
                 Id="0d112185-1d82-4e7a-b1e1-1776ccfa38be"
                 LastKnownName="doc : Document"
+                LastKnownLocation="UMLStart.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d4720a8d-f36b-442e-94ac-dd01a0029eb2"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="20a72bf7-71ee-4664-a36e-b849eb6776e3"
+                LastKnownName="Program"
                 LastKnownLocation="UMLStart.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -323,6 +416,26 @@
                 LastKnownLocation="UMLStart.uml" />
             </covered>
           </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="794b20f6-685f-4814-8956-99d182e84856"
+            name="OperandOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="20a72bf7-71ee-4664-a36e-b849eb6776e3"
+                LastKnownName="Program"
+                LastKnownLocation="UMLStart.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="c491ada4-2385-4741-8bb0-725d842e4743"
+            name="OperandOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="0d112185-1d82-4e7a-b1e1-1776ccfa38be"
+                LastKnownName="doc : Document"
+                LastKnownLocation="UMLStart.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="d48a8e04-1697-496e-8ce4-2558f2baf894"
             name="BehaviorExecutionSpecification5">
@@ -370,22 +483,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="3633d767-a841-4a07-93ac-27cf7805357d"
-            name="MessageOccurrenceSpecification15">
-            <covered>
-              <lifelineMoniker
-                Id="20a72bf7-71ee-4664-a36e-b849eb6776e3"
-                LastKnownName="Program"
-                LastKnownLocation="UMLStart.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="86e61e27-aa8c-4d55-80a4-891f468c1765"
             name="MessageOccurrenceSpecification16">
             <covered>
               <lifelineMoniker
                 Id="0d112185-1d82-4e7a-b1e1-1776ccfa38be"
                 LastKnownName="doc : Document"
+                LastKnownLocation="UMLStart.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3633d767-a841-4a07-93ac-27cf7805357d"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="20a72bf7-71ee-4664-a36e-b849eb6776e3"
+                LastKnownName="Program"
                 LastKnownLocation="UMLStart.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -457,6 +570,10 @@
                 Id="cc8a3f19-aeb2-4634-a31f-c8aeda852d05"
                 LastKnownName="ExecutionOccurrenceSpecification6"
                 LastKnownLocation="UMLStart.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="2341a883-d447-426a-9509-a675064ddc3f"
+                LastKnownName="OperandOccurrenceSpecification1"
+                LastKnownLocation="UMLStart.uml" />
               <executionOccurrenceSpecificationMoniker
                 Id="89a1a68a-c0c7-478d-9fc8-4e95a8347a56"
                 LastKnownName="ExecutionOccurrenceSpecification7"
@@ -464,6 +581,10 @@
               <executionOccurrenceSpecificationMoniker
                 Id="eda6c1d6-dce9-4a55-8648-207c282cbb03"
                 LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="UMLStart.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="c491ada4-2385-4741-8bb0-725d842e4743"
+                LastKnownName="OperandOccurrenceSpecification2"
                 LastKnownLocation="UMLStart.uml" />
               <executionOccurrenceSpecificationMoniker
                 Id="38f287d9-b4cb-4559-9f54-3df7265cff48"
