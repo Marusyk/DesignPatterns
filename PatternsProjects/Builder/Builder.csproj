@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45D3F315-66B9-41F7-AF3D-E03B8ED5A939}</ProjectGuid>
+    <ProjectGuid>{D855E872-36C9-4427-8742-02C473A39E92}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AbstractFactory</RootNamespace>
-    <AssemblyName>Labirint</AssemblyName>
+    <RootNamespace>Builder</RootNamespace>
+    <AssemblyName>Builder</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,22 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory.cs" />
-    <Compile Include="AbstractProductB.cs" />
-    <Compile Include="AbstractProductA.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="Factory1.cs" />
-    <Compile Include="Factory2.cs" />
-    <Compile Include="ProductA1.cs" />
-    <Compile Include="ProductA2.cs" />
-    <Compile Include="ProductB1.cs" />
-    <Compile Include="ProductB2.cs" />
+    <Compile Include="Builder.cs" />
+    <Compile Include="ConcreteBuilder.cs" />
+    <Compile Include="Director.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

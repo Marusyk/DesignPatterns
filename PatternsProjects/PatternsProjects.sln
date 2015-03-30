@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryMyExcample",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "Labirint\AbstractFactory.csproj", "{45D3F315-66B9-41F7-AF3D-E03B8ED5A939}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{D855E872-36C9-4427-8742-02C473A39E92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{45D3F315-66B9-41F7-AF3D-E03B8ED5A939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45D3F315-66B9-41F7-AF3D-E03B8ED5A939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45D3F315-66B9-41F7-AF3D-E03B8ED5A939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D855E872-36C9-4427-8742-02C473A39E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D855E872-36C9-4427-8742-02C473A39E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D855E872-36C9-4427-8742-02C473A39E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D855E872-36C9-4427-8742-02C473A39E92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
