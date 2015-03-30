@@ -14,6 +14,17 @@ namespace Builder
             this.builder = builder;
         }
 
+        private Builder Builder
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public void Construct()
         {
             builder.BuildPartA();

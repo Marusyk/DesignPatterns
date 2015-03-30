@@ -8,6 +8,17 @@ namespace Builder
 {
     class Program
     {
+        internal Director Director
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+    
         static void Main(string[] args)
         {
             Builder builder = new ConcreteBuilder();

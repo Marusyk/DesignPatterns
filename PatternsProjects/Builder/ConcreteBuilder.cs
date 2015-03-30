@@ -9,6 +9,17 @@ namespace Builder
     {
         Product product = new Product();
 
+        internal Product Product
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public override void BuildPartA()
         {
             product.Add("Part A");
