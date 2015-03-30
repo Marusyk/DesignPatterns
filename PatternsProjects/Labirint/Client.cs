@@ -16,6 +16,39 @@ namespace AbstractFactory
             apb = af.CreateProductB();
         }
 
+        internal AbstractFactory AbstractFactory
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        internal AbstractProductA AbstractProductA
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        internal AbstractProductB AbstractProductB
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public void Run()
         {
             apb.Interact(apa);

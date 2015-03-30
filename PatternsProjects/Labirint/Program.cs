@@ -8,6 +8,17 @@ namespace AbstractFactory
 {
     class Program
     {
+        internal Client Client
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+    
         static void Main(string[] args)
         {
             Client client = null;
