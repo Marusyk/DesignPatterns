@@ -19,7 +19,6 @@ namespace BuilderMyExcample
             Console.WriteLine("Result: {0}", soda.SodaProduct());
 
             Console.WriteLine();
-
             // create pepsi
             PepsiWater pepsi = new PepsiWater();
             director = new Director(pepsi);
