@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderMyExcample", "Builde
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractMethod", "AbstractMethod\AbstractMethod.csproj", "{5E6971DE-64EE-42A3-8C5A-CF2D1623A6C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{2FD03429-196B-4A6C-982F-4FEE3FF485AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyExcample", "MyExcample", "{CEA264F4-ABB6-4B63-AA28-E08BDE471368}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,8 +89,22 @@ Global
 		{5E6971DE-64EE-42A3-8C5A-CF2D1623A6C7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{5E6971DE-64EE-42A3-8C5A-CF2D1623A6C7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{5E6971DE-64EE-42A3-8C5A-CF2D1623A6C7}.Release|x86.ActiveCfg = Release|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2FD03429-196B-4A6C-982F-4FEE3FF485AD}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{409BC9B3-079A-4FC5-870D-B16E4A6E3EE5} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
+		{BBFCDC81-477C-4D2C-BBF6-8D613571AD9D} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 	EndGlobalSection
 EndGlobal
