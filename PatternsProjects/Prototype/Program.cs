@@ -18,7 +18,10 @@ namespace Prototype
             A a1 = new A();
             a1.param = "param2";
             Console.WriteLine(a1.param);
-            #endregion
+#endregion
+
+
+#region Prototype
             Prototype p = new ConcretePrototype();
             p.param = "param 3";
             Console.WriteLine(p.param);
@@ -27,10 +30,17 @@ namespace Prototype
             p1 = p.Clone();
             p1.param = "param 4";
             Console.WriteLine(p1.param);
-            Console.WriteLine();
+#endregion
 
-#region Prototype
+#region ProperUsingPrototype
+            InterfacePrototype i = new InterfacePrototype();
+            i.param = "param  5";
+            Console.WriteLine(i.param);
 
+            InterfacePrototype i1;
+            i1 = i.Clone() as InterfacePrototype;
+            i1.param = "param  6";
+            Console.WriteLine(i.param);
 #endregion
             Console.ReadKey();
         }
@@ -53,6 +63,15 @@ namespace Prototype
         public override Prototype Clone()
         {
             return new ConcretePrototype();
+        }
+    }
+
+    class InterfacePrototype : ICloneable
+    {
+        public string param { get; set; }
+        public object Clone()
+        {
+            return (object)this.MemberwiseClone();
         }
     }
 }
