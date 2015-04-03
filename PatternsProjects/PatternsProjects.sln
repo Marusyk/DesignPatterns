@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyExcample", "MyExcample", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototypes", "Prototypes\Prototypes.csproj", "{A80915DB-2F6F-4DBE-958F-6E51E263AA07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,16 @@ Global
 		{A80915DB-2F6F-4DBE-958F-6E51E263AA07}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A80915DB-2F6F-4DBE-958F-6E51E263AA07}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A80915DB-2F6F-4DBE-958F-6E51E263AA07}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1D085FD3-DFD3-4D12-9275-ADAF06B1F715}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
