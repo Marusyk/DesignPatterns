@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeMyExcample", "BridgeMyExcample\BridgeMyExcample.csproj", "{B3532ED3-5A86-42F3-8CCA-1E4384D74943}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +209,16 @@ Global
 		{B3532ED3-5A86-42F3-8CCA-1E4384D74943}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B3532ED3-5A86-42F3-8CCA-1E4384D74943}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B3532ED3-5A86-42F3-8CCA-1E4384D74943}.Release|x86.ActiveCfg = Release|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
