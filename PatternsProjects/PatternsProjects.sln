@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeMyExcample", "BridgeM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeMyExcample", "CompositeMyExcample\CompositeMyExcample.csproj", "{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,16 @@ Global
 		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B9164A35-99E7-4063-A4AF-AC5E04DBB34F}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -231,5 +243,6 @@ Global
 		{723DA693-96C7-46A9-9E55-F626183AAAB4} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{B31DAE8F-02B6-456A-950A-FD4D9976800F} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{B3532ED3-5A86-42F3-8CCA-1E4384D74943} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
+		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 	EndGlobalSection
 EndGlobal
