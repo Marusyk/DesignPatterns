@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Comp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeMyExcample", "CompositeMyExcample\CompositeMyExcample.csproj", "{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{8E60C416-5EFB-48D8-9099-349DCA7DC61F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +233,16 @@ Global
 		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76}.Release|x86.ActiveCfg = Release|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8E60C416-5EFB-48D8-9099-349DCA7DC61F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
