@@ -1,15 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ProxyMyExcample
 {
-    class Proxy : Comp
+    class Proxy : IProtocol
     {
-        Comp comp = new Comp();
+        public IProtocol client;
+        List<string> _history = new List<string>();
+        public string GetSite { get; set; }
 
-        public override void Operation()
+        public void Connect()
         {
-            Console.WriteLine(Name + ": working...");
-            comp.Operation();
+            this.client.Connect();
+            _history.Add((client as Client).GetSite);
+        }
+
+        public List<string> GetHistory()
+        {
+            return _history;
         }
     }
 }
