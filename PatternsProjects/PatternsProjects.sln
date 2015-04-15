@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "Flyweight\Flyw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{11D1DBBB-7A53-475F-880A-E4C1BE165BEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyMyExcample", "ProxyMyExcample\ProxyMyExcample.csproj", "{DAE5452F-58D7-4604-AB6F-0755DB6D0081}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +305,16 @@ Global
 		{11D1DBBB-7A53-475F-880A-E4C1BE165BEE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{11D1DBBB-7A53-475F-880A-E4C1BE165BEE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{11D1DBBB-7A53-475F-880A-E4C1BE165BEE}.Release|x86.ActiveCfg = Release|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -318,5 +330,6 @@ Global
 		{0C13A00E-8194-41B4-BC2B-DE0ADB927F76} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{C4D0415B-0B49-4BE0-9964-1E7FE18D1F3D} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{1C699765-D214-4045-AE5B-02DC5D3A0702} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
+		{DAE5452F-58D7-4604-AB6F-0755DB6D0081} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 	EndGlobalSection
 EndGlobal
