@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyMyExcample", "ProxyMyExcample\ProxyMyExcample.csproj", "{DAE5452F-58D7-4604-AB6F-0755DB6D0081}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{5A169C31-E42B-447D-B808-B3513D401EDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +317,16 @@ Global
 		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DAE5452F-58D7-4604-AB6F-0755DB6D0081}.Release|x86.ActiveCfg = Release|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5A169C31-E42B-447D-B808-B3513D401EDC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
