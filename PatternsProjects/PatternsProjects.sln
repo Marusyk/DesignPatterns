@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandMyExcample", "Comman
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "Interpreter\Interpreter.csproj", "{0A84C1D4-A1DE-4031-B5F7-043E17021BF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorClassic", "IteratorClassic\IteratorClassic.csproj", "{F288D48F-E182-48BB-B022-BE1B66BAD87E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -375,6 +377,16 @@ Global
 		{0A84C1D4-A1DE-4031-B5F7-043E17021BF1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{0A84C1D4-A1DE-4031-B5F7-043E17021BF1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{0A84C1D4-A1DE-4031-B5F7-043E17021BF1}.Release|x86.ActiveCfg = Release|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F288D48F-E182-48BB-B022-BE1B66BAD87E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
