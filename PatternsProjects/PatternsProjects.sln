@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorMyExcample", "Itera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediator.csproj", "{07FBFBF5-C51E-47DF-B830-21A97F8ED722}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorMyExcample", "MediatorMyExcample\MediatorMyExcample.csproj", "{6501576E-7E52-4FD8-84D5-452271200E0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -423,6 +425,16 @@ Global
 		{07FBFBF5-C51E-47DF-B830-21A97F8ED722}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{07FBFBF5-C51E-47DF-B830-21A97F8ED722}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{07FBFBF5-C51E-47DF-B830-21A97F8ED722}.Release|x86.ActiveCfg = Release|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6501576E-7E52-4FD8-84D5-452271200E0B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -442,5 +454,6 @@ Global
 		{C9A25DD1-EC4E-4414-9306-862ABE44269D} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{50A8B394-0EA2-47B1-ABE1-A7E7DCDEF265} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{25E18664-63A1-4814-8628-3903FFD30587} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
+		{6501576E-7E52-4FD8-84D5-452271200E0B} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 	EndGlobalSection
 EndGlobal
