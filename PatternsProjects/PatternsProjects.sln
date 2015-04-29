@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorMyExcample", "Media
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{95FB6CEA-2FF9-4F13-98EA-0B61689AB5AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoMyExcample", "MementoMyExcample\MementoMyExcample.csproj", "{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -447,6 +449,16 @@ Global
 		{95FB6CEA-2FF9-4F13-98EA-0B61689AB5AB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{95FB6CEA-2FF9-4F13-98EA-0B61689AB5AB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{95FB6CEA-2FF9-4F13-98EA-0B61689AB5AB}.Release|x86.ActiveCfg = Release|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -467,5 +479,6 @@ Global
 		{50A8B394-0EA2-47B1-ABE1-A7E7DCDEF265} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{25E18664-63A1-4814-8628-3903FFD30587} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{6501576E-7E52-4FD8-84D5-452271200E0B} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
+		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 	EndGlobalSection
 EndGlobal
