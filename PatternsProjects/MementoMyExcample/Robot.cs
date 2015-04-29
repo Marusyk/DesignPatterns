@@ -8,6 +8,6 @@ namespace MementoMyExcample
 {
     class Robot
     {
-        public Backpack Backpack { get; set; }
+        public INarrowInterface Backpack { get; set; }
     }
 }

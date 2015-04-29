@@ -21,7 +21,7 @@ namespace MementoMyExcample
             David.Clothes = "Шорти";
             Console.WriteLine("David: " + David.Clothes);
 
-            David.Dress(ASIMO.Backpack);
+            David.Dress(ASIMO.Backpack as Backpack);
             Console.WriteLine("David: " + David.Clothes);
 
             Console.ReadKey();
