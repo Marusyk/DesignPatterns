@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMyExcample", "StateMyExcample\StateMyExcample.csproj", "{9A708A8B-CB32-4CD7-AD27-335980794421}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -507,6 +509,16 @@ Global
 		{9A708A8B-CB32-4CD7-AD27-335980794421}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{9A708A8B-CB32-4CD7-AD27-335980794421}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{9A708A8B-CB32-4CD7-AD27-335980794421}.Release|x86.ActiveCfg = Release|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DE39FD9B-4C6A-4C50-94DD-6E001E1EAE55}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
