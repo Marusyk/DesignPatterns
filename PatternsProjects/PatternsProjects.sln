@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer(Push)", "Observer(
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj", "{F0A13918-E1E9-4785-836F-CD8A3ECA9240}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMyExcample", "StateMyExcample\StateMyExcample.csproj", "{9A708A8B-CB32-4CD7-AD27-335980794421}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -495,6 +497,16 @@ Global
 		{F0A13918-E1E9-4785-836F-CD8A3ECA9240}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{F0A13918-E1E9-4785-836F-CD8A3ECA9240}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F0A13918-E1E9-4785-836F-CD8A3ECA9240}.Release|x86.ActiveCfg = Release|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9A708A8B-CB32-4CD7-AD27-335980794421}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -516,5 +528,6 @@ Global
 		{25E18664-63A1-4814-8628-3903FFD30587} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{6501576E-7E52-4FD8-84D5-452271200E0B} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
+		{9A708A8B-CB32-4CD7-AD27-335980794421} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 	EndGlobalSection
 EndGlobal
