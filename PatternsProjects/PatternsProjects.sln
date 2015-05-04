@@ -93,6 +93,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyMyExcample", "Strat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodMyExcample", "TemplateMethodMyExcample\TemplateMethodMyExcample.csproj", "{09ECE005-0AD0-4951-99C4-FB82C5E878BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -543,6 +545,16 @@ Global
 		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Release|x86.ActiveCfg = Release|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -566,5 +578,6 @@ Global
 		{86EAF6D0-A850-4A00-85E9-48F9D822BC7C} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{9A708A8B-CB32-4CD7-AD27-335980794421} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 		{A34DEE53-FE35-4AB8-A75B-520BB1E0149C} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
+		{09ECE005-0AD0-4951-99C4-FB82C5E878BF} = {CEA264F4-ABB6-4B63-AA28-E08BDE471368}
 	EndGlobalSection
 EndGlobal
