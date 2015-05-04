@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyMyExcample", "Strategy MyExcample\StrategyMyExcample.csproj", "{A34DEE53-FE35-4AB8-A75B-520BB1E0149C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -531,6 +533,16 @@ Global
 		{A34DEE53-FE35-4AB8-A75B-520BB1E0149C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A34DEE53-FE35-4AB8-A75B-520BB1E0149C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A34DEE53-FE35-4AB8-A75B-520BB1E0149C}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EF474C21-1131-4FE7-8F09-B75F60EF3EF7}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
