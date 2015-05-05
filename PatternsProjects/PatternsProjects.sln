@@ -95,6 +95,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodMyExcample", "TemplateMethodMyExcample\TemplateMethodMyExcample.csproj", "{09ECE005-0AD0-4951-99C4-FB82C5E878BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -555,6 +557,16 @@ Global
 		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{09ECE005-0AD0-4951-99C4-FB82C5E878BF}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AC099ED5-CB4E-4755-B86C-9C76CB35EB3C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
