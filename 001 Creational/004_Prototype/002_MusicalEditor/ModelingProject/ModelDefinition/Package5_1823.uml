@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ce18e10c-5f94-43d5-aae2-35051edaa7a4"
+  name="Library"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9a9ad712-123a-4955-9599-131b442e0bc5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPianoSoundLibrary.Library"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="753668b1-2733-4faa-b4ce-ffd4864deb57"
+        name="OutputDevice"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="842e42fc-6dd4-4c21-91c7-3811af5c2287"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2F002_MusicalEditor%2FMusicNotes%2Fbin%2FDebug%2FPianoSoundLibrary.dll Namespace%3DPianoSoundLibrary.Library Type%3DOutputDevice"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="64b4fb8f-b3e7-4be5-80ce-72b5c9863c53"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f832ac01-dfc5-468c-990e-a5a90cd24eef">
+                <propertyInstance
+                  Id="4ea64a5d-639e-49ec-b99c-22c20a38281a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bbc80017-34f2-4bb9-8b51-c7c880ccf395">
+                <propertyInstance
+                  Id="a5e184fc-50f1-4e9d-8423-aa870e7b8b0e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df3f8adc-f075-4c87-994d-60daa557fcc3">
+                <propertyInstance
+                  Id="859789d4-e5b3-4576-ab19-305884cb6a8e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9321fbd7-9a4e-4393-aa44-206ceb20821b">
+                <propertyInstance
+                  Id="dcf584fd-318f-4865-ad6e-530ccc46f5b6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="861b382e-6878-4a87-a173-5b206a19853c">
+                <propertyInstance
+                  Id="05fc1d72-4616-4080-97ac-bfbae75db28a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

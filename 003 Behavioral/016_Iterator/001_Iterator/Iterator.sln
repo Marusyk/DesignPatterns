@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{A416D6F7-81A7-4BE1-9A20-C376DF3BF465}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingIterator", "ModelingIterator\ModelingIterator.modelproj", "{40DB975D-F217-4863-B345-E89A85EF9464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A416D6F7-81A7-4BE1-9A20-C376DF3BF465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A416D6F7-81A7-4BE1-9A20-C376DF3BF465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A416D6F7-81A7-4BE1-9A20-C376DF3BF465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A416D6F7-81A7-4BE1-9A20-C376DF3BF465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40DB975D-F217-4863-B345-E89A85EF9464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DB975D-F217-4863-B345-E89A85EF9464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DB975D-F217-4863-B345-E89A85EF9464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40DB975D-F217-4863-B345-E89A85EF9464}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

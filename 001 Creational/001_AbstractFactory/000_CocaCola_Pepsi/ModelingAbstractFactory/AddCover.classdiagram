@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="95018e46-c281-452d-9e3e-b4eaec1c726e" name="AddCover" linkedPackageId="f31942c5-815d-4374-90c7-9fe516a92326" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="038e2e01-31f1-43ae-8b6f-caaa8ca4d4af">
+      <profileInstance Id="aaa27f2f-4b54-4b22-8ebc-2bf8814a8eaf" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e0b18009-1ff3-4cc2-b838-151b99332c14">
+      <profileInstance Id="29d090f7-4c8e-4549-a9a7-964ead4673fb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="3bf9915e-fe2d-4658-8e25-a643fdd6ae17" name="AbstractWater" isAbstract="false" isLeaf="false" cachedFullName="ModelingAbstractFactory::AbstractFactory::AbstractWater">
+        <elementDefinition Id="d81d547d-5686-43da-bf7e-c322e0d08c98" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="20af41c4-ee8e-4da0-aec0-9399d5704c51" name="AbstractBottle" isAbstract="false" isLeaf="false" cachedFullName="ModelingAbstractFactory::AbstractFactory::AbstractBottle">
+        <elementDefinition Id="b8733319-60a6-4e07-b49a-1b271c9472b5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6284cb5c-00b5-45f2-8fef-4db0e7a2d217" name="ModelingAbstractFactory::AbstractFactory::AbstractCover" isAbstract="false" isLeaf="false" cachedFullName="ModelingAbstractFactory::AbstractFactory::AbstractCover">
+        <elementDefinition Id="9bf45686-f96e-4d6d-99b1-17b137847b6a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="a6684493-aa6a-4f82-a3ac-fccb779e28ae" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a6e53f8d-5ea2-454a-beee-42a7c6b07444" name="AbstractWater" isAbstract="false" isLeaf="false" cachedFullName="ModelingAbstractFactory::AbstractFactory::AbstractWater">
+        <elementDefinition Id="d81d547d-5686-43da-bf7e-c322e0d08c98" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3b4686bb-2e24-49e4-bb22-c37c71888099" name="AbstractBottle" isAbstract="false" isLeaf="false" cachedFullName="ModelingAbstractFactory::AbstractFactory::AbstractBottle">
+        <elementDefinition Id="b8733319-60a6-4e07-b49a-1b271c9472b5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="87178af0-9112-4b69-9dc2-bf8202c3554e" name="AbstractFactory1">
+        <elementDefinition Id="b2d753ca-de94-47e3-93b3-1e3e27c0b002" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="3e42e2af-447f-4b1a-a93b-eb6166620b76" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c59b3cb9-875a-4f30-81ae-4cc2c50f0e9b" />
+              <targetEnds>
+                <association Id="9684325b-4a43-46c1-8139-8a06f53e9bb2" isDerived="false" sourceEndRoleName="Program" targetEndRoleName="Client" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="b3943f24-4ed1-42a9-9a9d-67dfaef76ed0" LastKnownName="Client" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2dbb21a6-abb0-46aa-bdf4-499aefa379a3" name="Program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="4db2cefe-ea6d-4da9-bfd2-ee4fd631fd02" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="250c0fa3-f155-49ea-94a0-f6c38daa3a49" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="2e6c78b3-a689-4847-86ab-9a6673e16fc8" name="Lower" value="1">
+                            <elementDefinition Id="21aa3c42-1366-4c31-bab1-4dd8d839b589" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="4f8e67df-2ae9-45d4-aaf5-adf16d6fd9be" name="Upper" value="*">
+                            <elementDefinition Id="1f56063a-defc-4316-8f5d-78e1abb53583" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="b62ccd92-f842-4c2b-b5f6-6365a3f1f202" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="006a496e-88e2-4e21-a7c8-2b0ef9cefc2d" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="7cea8962-6b10-4787-8a54-3728c5564f18" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="79e62010-8c91-42a4-92ae-5d5f10071ac9" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5c5108c8-8400-4d7a-a9ac-9e66de6a9a80" direction="Return" isUnique="false">
+                        <elementDefinition Id="e9ce8fe9-a094-40a1-9ca3-32578d4a7a06" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b3943f24-4ed1-42a9-9a9d-67dfaef76ed0" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d78ce891-92b3-4522-a061-95f0d428f2ee" />
+              <targetEnds>
+                <association Id="a3265268-683c-4c1e-8c02-491dfc205565" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="AbstractWater" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="77440e9c-5af1-42b6-91a4-f605e1307c7f" LastKnownName="AbstractWater" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="3941e22f-ce3e-4b9b-83fe-6692e858572d" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="b04a94b5-c696-4a20-80fb-bd9aa0b041a2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="115874a6-4695-4ed2-a276-35d951a5865f" name="AbstractWater" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="e892aca3-f4b1-4b99-b53b-c9747e37801a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="55c7ddd9-9828-457e-bf3b-a930d512ebfc" />
+                </association>
+                <association Id="e39f61b0-9e63-4a19-8498-d13abba04826" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="AbstractBottle" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="46ba5b23-e3b4-454c-96d9-d942d6c80f5d" LastKnownName="AbstractBottle" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c7259ae5-9a6d-4ce3-8a77-c9ef5c20b4ca" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="b7c97f4d-c920-4199-b274-10484ea03fab" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="689d5ece-9df6-4b83-8d76-997991ed264f" name="AbstractBottle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="8a25f708-8ed0-41eb-96fa-3c8b97693296" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="54989be7-bb99-4b1d-88c4-d6d639b35aba" />
+                </association>
+                <association Id="068673eb-0144-4799-8fb7-1cb66888213c" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="AbstractFactory" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="7b3dd545-ffff-4892-ba94-6644afd2b816" LastKnownName="AbstractFactory" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="68214eef-5c73-4288-94a8-539c93d185d8" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="912556f8-b1ad-43a3-b7d8-b58ed6613d52" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="cb882189-a092-483c-9c4f-82193299343e" name="AbstractFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="f78f29e5-765a-462a-a5e2-6bc60c6fba2f" name="Lower" value="1">
+                            <elementDefinition Id="236925c3-ca93-4a67-aa8e-b794cff7ea0c" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="ada592e3-e1c0-4c93-b7c8-f0fb6d92bc67" name="Upper" value="1">
+                            <elementDefinition Id="7477da0b-2549-4557-b2c1-de52d3850624" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="a919ec7a-3f78-4e64-8dab-2e8a04c59a72" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="89be5033-cf2b-4615-91ec-92a916c00ee3" />
+                </association>
+                <association Id="e8752cb0-7618-4b27-b980-dc61ff3a38ee" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="AbstractCover" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="e0057790-d1bc-46de-8db7-80b6e4570971" LastKnownName="AbstractCover" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6a05922b-b317-486f-8076-6d123ac64103" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="bc2e415a-12c8-42b8-b0e3-56175e9218ea" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="99bca7a7-8bf5-4f2a-bfa6-4e13054057a1" name="AbstractCover" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f506dc51-3349-4549-91c9-2e6bf3f52f4c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="5172192f-bf19-42dc-8221-0f6ca21271fc" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="4e4384e8-36c0-4b84-b379-4a581387e90e" name="water" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e30ff289-9be9-4102-b926-753599d1c7c5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3bf9915e-fe2d-4658-8e25-a643fdd6ae17" LastKnownName="AbstractWater" />
+                  </type_NamedElement>
+                </property>
+                <property Id="686d5434-abf5-42d2-b5f8-cfcd11ecff1e" name="bottle" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="14e998fb-69dd-4a10-9c4a-6b173452c13a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="20af41c4-ee8e-4da0-aec0-9399d5704c51" LastKnownName="AbstractBottle" />
+                  </type_NamedElement>
+                </property>
+                <property Id="aedf4a22-2c7c-4115-adb0-0c6a2a6cbbe8" name="cover" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e741a66-a183-48fe-8bef-4daa4c64b1a7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6284cb5c-00b5-45f2-8fef-4db0e7a2d217" LastKnownName="ModelingAbstractFactory::AbstractFactory::AbstractCover" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="1a185899-bc2a-4a6e-81b4-55f1dcd7716f" name="Client" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="afa35772-b1c2-47ee-87c0-ed59949b108e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ed578a2d-8ed1-4135-9439-93178ca6b3d4" name="AbstractFactory factory" direction="In" isUnique="false">
+                        <elementDefinition Id="eee389b0-94bb-41e9-9f61-fd4b7648eca4" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="3338e13d-abfa-4470-bfa0-7cae6e98bf77" name="Run" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e743435e-e912-4c0a-9439-b50359e0129f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="213f235b-db9f-4938-9a17-65950d393ce3" direction="Return" isUnique="false">
+                        <elementDefinition Id="3c0ea53a-b6c4-4676-80f3-6fc3ca66c4e7" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="77440e9c-5af1-42b6-91a4-f605e1307c7f" name="AbstractWater" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="22e31da1-ea76-4117-aa8b-8a29db82fba1" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="46ba5b23-e3b4-454c-96d9-d942d6c80f5d" name="AbstractBottle" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6fc675c4-5d30-4c71-bcb8-f11bb3e9626a" />
+              <ownedOperationsInternal>
+                <operation Id="5fd593eb-59f6-4ff6-bd7a-2f74da737937" name="Interact" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="df1752ee-f8c8-4229-b4a0-153dc189dd51" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="084cf6ce-1b4c-4b53-908d-67f15ed918ab" direction="Return" isUnique="false">
+                        <elementDefinition Id="d2dbf778-e712-4efe-b0c8-8575d59a83f4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6cd3a9a2-8bf2-4c5b-839e-af44c40dc666" name="AbstractWater water" direction="In" isUnique="false">
+                        <elementDefinition Id="2c555975-ce52-4d63-be5f-0ad9522e5ff6" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="0661eb0e-0b40-4b4c-825e-eb0c4b91fb0e" name="Interact" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5df0bfd3-106a-49d0-bbd0-79c8e656b3ff" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="73f1e681-12cf-4f61-beec-b19beab23112" direction="Return" isUnique="false">
+                        <elementDefinition Id="9d2ed543-050c-47cc-8141-e869ffaa0ca5" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1c1b1317-fe8b-4b40-8658-5377effc84fc" name="AbstractCover cover" direction="In" isUnique="false">
+                        <elementDefinition Id="9708d945-0ba4-4d86-bbe3-c1b5c0b3f813" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7b3dd545-ffff-4892-ba94-6644afd2b816" name="AbstractFactory" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5dc1f33e-f648-432b-a587-cb0fd04494d5" />
+              <ownedOperationsInternal>
+                <operation Id="5a634f95-5b92-4e80-ba1f-5cd9ba22d46a" name="CreateWater" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f7bf2ee0-c004-48ad-8700-95880d42f9a1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ee08c720-dc80-4c63-a8f5-ff9ae7d88896" direction="Return" isUnique="false">
+                        <elementDefinition Id="bc6d3b60-55c8-43a2-8c32-eab304c17304" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="a6e53f8d-5ea2-454a-beee-42a7c6b07444" LastKnownName="AbstractWater" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="283ba22c-92e2-4ef0-be1d-7c4edbb71aa0" name="CreateBottle" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="922a2a33-6f31-4a89-baea-7d1c40080c66" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fce725cd-3b33-49ad-aece-a3f0d99b7a36" direction="Return" isUnique="false">
+                        <elementDefinition Id="530efab4-bc87-41ea-b3cc-86673b2e26c9" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="3b4686bb-2e24-49e4-bb22-c37c71888099" LastKnownName="AbstractBottle" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="4e682d84-46bb-4eb9-9bc1-16245267347c" name="CreateCover" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ca273c10-0252-4ffd-99b1-44deb617a51c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e130b286-5c4b-42fe-8b10-38f71f26b856" direction="Return" isUnique="false">
+                        <elementDefinition Id="07239f9b-a121-4c74-ad88-eeff366d687d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="6284cb5c-00b5-45f2-8fef-4db0e7a2d217" LastKnownName="ModelingAbstractFactory::AbstractFactory::AbstractCover" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="927770c2-4552-4591-bcad-4d17eeaa51d3" name="CocaColaWater" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a34789a7-714e-4f55-b0eb-6c7e3185d0d7" />
+              <generalsInternal>
+                <generalization Id="fc0d52f2-bbdd-468b-b57e-fece89598e2e" isSubstitutable="false">
+                  <classMoniker Id="77440e9c-5af1-42b6-91a4-f605e1307c7f" LastKnownName="AbstractWater" />
+                  <elementDefinition Id="97bf8e60-a819-4e66-8edb-9e4dc59f022c" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b92b1b8b-c031-4adc-aaa0-1077ad55093b" name="PepsiWater" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bdea2324-4cbe-4579-97eb-974bc30d3bf8" />
+              <generalsInternal>
+                <generalization Id="71a582d2-c11a-4220-80e3-f7633fefa486" isSubstitutable="false">
+                  <classMoniker Id="77440e9c-5af1-42b6-91a4-f605e1307c7f" LastKnownName="AbstractWater" />
+                  <elementDefinition Id="a174ca49-7c35-495d-80a8-30e3412aea3f" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e5f39298-1828-4fe3-8863-bbe55d376dd3" name="CocaColaBottle" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e424c32d-e21e-4066-860e-7c9d085a9fc5" />
+              <generalsInternal>
+                <generalization Id="02e83b5a-ea36-4ca5-b8b5-31a7defe23be" isSubstitutable="false">
+                  <classMoniker Id="46ba5b23-e3b4-454c-96d9-d942d6c80f5d" LastKnownName="AbstractBottle" />
+                  <elementDefinition Id="052b6b55-7694-48c9-a728-26b3b81f0bf0" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="34bad1a9-c16d-4ee5-bef6-de8ffc080703" name="Interact" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e07bdf39-0fbb-449d-a42d-164a21a2e459" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6c9f545a-eae7-44a7-9cb6-7061f6023bfb" direction="Return" isUnique="false">
+                        <elementDefinition Id="4c599c47-aa08-40e2-9867-ffb10dfd85d0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7a2f4a8c-23fa-420c-8ff7-43520e882252" name="AbstractWater water" direction="In" isUnique="false">
+                        <elementDefinition Id="ecf7ec77-628e-402f-bf59-7144cf9ce703" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="12cdc13e-e254-4385-b190-a47e14aefa8b" name="Interact" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="85edb2b8-44e7-4226-bae5-14980bdd3411" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="be31a8bd-4fbd-4356-a89e-e1526a60489c" name="AbstractCover cover" direction="In" isUnique="false">
+                        <elementDefinition Id="592eeef0-c887-420f-9739-5f713f3dada0" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6724cafa-c11d-40e1-aa36-37e51532f067" direction="Return" isUnique="false">
+                        <elementDefinition Id="ad2d7f88-0559-43f3-a127-88a8df6878fb" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6c64536a-dc4e-4b4a-b524-b19b4dbbdcea" name="PepsiBottle" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a6f47b81-1b1c-4d2c-9403-c34493fe5000" />
+              <generalsInternal>
+                <generalization Id="88109294-9dd3-4d49-8375-6c393d17facc" isSubstitutable="false">
+                  <classMoniker Id="46ba5b23-e3b4-454c-96d9-d942d6c80f5d" LastKnownName="AbstractBottle" />
+                  <elementDefinition Id="466657f3-f50f-4e39-bfb1-b1d879693621" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="b10eb795-1893-4f38-9e26-c7ff106190cc" name="Interact" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="dd137c5e-1c20-45ff-adf4-bd2c37d8f07f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="43af1749-45b0-47bb-8f08-5f6558fd0314" direction="Return" isUnique="false">
+                        <elementDefinition Id="1552a470-040d-4d7b-acd6-9d71b32a5a8b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ef3fa75b-9b2b-4ddc-9d1a-6a48d0bddbc6" name="AbstractWater water" direction="In" isUnique="false">
+                        <elementDefinition Id="109b1ff3-3ce0-4951-bfb0-6d8723c6c27c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="abef5fed-f246-4e68-b9ce-b4e81d6e0117" name="Interact" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="286fa164-28de-4f22-a4bb-25f5d12f635b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f0b85d99-cd3a-48a3-9ef2-87f3891475cf" name="AbstractCover cover" direction="In" isUnique="false">
+                        <elementDefinition Id="e1c8e26d-20b3-4ff4-a6bf-c2fd5ad6f04b" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c0d23929-d30d-4cb9-bf03-545cbe0c2b4a" direction="Return" isUnique="false">
+                        <elementDefinition Id="fd09a8d9-a003-4152-a745-f3f98a412f88" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d67fc026-d17c-4cd0-96ca-b8766a70906c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1395612c-4c47-4812-9b57-6f32d84b93d0" name="CocaColaFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0c5d5e79-ddf4-4c8d-8158-b2e7ab47fba7" />
+              <suppliersInternal>
+                <dependency Id="c1614343-1cf5-4da7-aa12-9070e9a4ab7d" name="&lt;&lt;instantiate&gt;&gt;">
+                  <classMoniker Id="927770c2-4552-4591-bcad-4d17eeaa51d3" LastKnownName="CocaColaWater" />
+                  <elementDefinition Id="09fb30ab-b928-43e6-819c-01767a16ea69" />
+                </dependency>
+                <dependency Id="d8beaffd-dfaf-45f3-bc33-b53c3a389e8b" name="&lt;&lt;instantiate&gt;&gt;">
+                  <classMoniker Id="e5f39298-1828-4fe3-8863-bbe55d376dd3" LastKnownName="CocaColaBottle" />
+                  <elementDefinition Id="4a309fd7-75fa-4ae1-b4d7-24e3027879ad" />
+                </dependency>
+                <dependency Id="eb101be6-e752-46f5-8fc9-988153f0a4a7" name="&lt;&lt;instantiate&gt;&gt;">
+                  <classMoniker Id="b019bcf7-14b3-4cfb-a780-7cd72b789d6f" LastKnownName="CocaColaCover" />
+                  <elementDefinition Id="2221c6b7-8eb7-4ddd-91f9-daa6b5ed4d53" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="7b55b763-7848-491c-807b-49e57dc8ef92" isSubstitutable="false">
+                  <classMoniker Id="7b3dd545-ffff-4892-ba94-6644afd2b816" LastKnownName="AbstractFactory" />
+                  <elementDefinition Id="5a3ba9ee-7087-427d-bfab-8712c913218b" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="3f89c306-0138-4595-993e-9ad233df5890" name="CreateWater" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f385bcda-c4a4-4737-b36f-ac7eef23c934" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fbf9df50-a0da-49d8-8049-aef77a4dba45" direction="Return" isUnique="false">
+                        <elementDefinition Id="cfd5cff9-0262-4e3b-945b-3d462e25b889" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="a6e53f8d-5ea2-454a-beee-42a7c6b07444" LastKnownName="AbstractWater" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="4a778749-d7e6-44d9-8fe2-3b5bff3a5641" name="CreateBottle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7fd84b7b-feb5-44be-9c27-3b8a00b85e65" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c14a1e73-a316-48b2-a18d-f4e5794d00a1" direction="Return" isUnique="false">
+                        <elementDefinition Id="ff98bd0c-c4a2-4a26-b68a-c06d2d9f623d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="3b4686bb-2e24-49e4-bb22-c37c71888099" LastKnownName="AbstractBottle" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="099c70cd-dff3-4db8-88a5-8e083da81ece" name="CreateCover" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b9e05fb2-505e-4f57-8786-614baedc109d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a15538ef-0e13-4961-9789-842dbf032798" direction="Return" isUnique="false">
+                        <elementDefinition Id="27cc3373-4c21-465c-9301-0ac63a8b5533" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="6284cb5c-00b5-45f2-8fef-4db0e7a2d217" LastKnownName="ModelingAbstractFactory::AbstractFactory::AbstractCover" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="4c654166-afa1-49b1-979f-ca884aa622c1" name="PepsiFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9f5c5c84-a16f-4174-9f0e-c95b555c5936" />
+              <suppliersInternal>
+                <dependency Id="77384280-9fbb-4734-864c-1b880696bbdc" name="&lt;&lt;instantiate&gt;&gt;">
+                  <classMoniker Id="b92b1b8b-c031-4adc-aaa0-1077ad55093b" LastKnownName="PepsiWater" />
+                  <elementDefinition Id="d3b1f71a-7ff3-4584-ad89-e67f2c001f0b" />
+                </dependency>
+                <dependency Id="ce12a91f-450e-4e48-b1a2-fa629db55159" name="&lt;&lt;instantiate&gt;&gt;">
+                  <classMoniker Id="6c64536a-dc4e-4b4a-b524-b19b4dbbdcea" LastKnownName="PepsiBottle" />
+                  <elementDefinition Id="40b1ad33-3fd2-4e60-8836-47871a085553" />
+                </dependency>
+                <dependency Id="d7b18fea-b3b1-49fd-baea-64f2fe1d98f6" name="&lt;&lt;instantiate&gt;&gt;">
+                  <classMoniker Id="578fbdd3-50d9-40b1-8121-c345df04f9a1" LastKnownName="PepsiCover" />
+                  <elementDefinition Id="97073f56-87ec-46e4-9328-78b7146d8024" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="6b7e0072-077f-4121-a627-4460c7853a01" isSubstitutable="false">
+                  <classMoniker Id="7b3dd545-ffff-4892-ba94-6644afd2b816" LastKnownName="AbstractFactory" />
+                  <elementDefinition Id="228090f9-64aa-4a43-b6ad-6b9b9d3856a4" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="886235b9-f506-4145-a801-de2ffef76cc3" name="CreateWater" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="040e97fb-1269-4896-9023-cbe87efdc191" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0e358357-a1c2-4ed7-9c83-755cf7c34d1e" direction="Return" isUnique="false">
+                        <elementDefinition Id="5fbdf0cb-eb12-459e-b569-1e95cdadae21" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="a6e53f8d-5ea2-454a-beee-42a7c6b07444" LastKnownName="AbstractWater" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="82e053f3-317e-4d3e-aef9-13ed2f7d87ee" name="CreateBottle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5a8640ff-869c-409e-8904-f1445d137ebb" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3a15bb1c-93f9-4fb6-a645-3d47b09deac4" direction="Return" isUnique="false">
+                        <elementDefinition Id="be337c68-837c-4065-b64e-b25d7a03156d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="3b4686bb-2e24-49e4-bb22-c37c71888099" LastKnownName="AbstractBottle" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="a5c5d38e-5adc-4920-826c-e063085cfd86" name="CreateCover" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="57a595f0-2cb1-46d3-95e9-4544691f5788" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f1e0d2fc-7937-4bd5-acb1-0af04e1aec59" direction="Return" isUnique="false">
+                        <elementDefinition Id="b5171b98-fd77-4a3d-a991-57d38bde7778" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="6284cb5c-00b5-45f2-8fef-4db0e7a2d217" LastKnownName="ModelingAbstractFactory::AbstractFactory::AbstractCover" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e0057790-d1bc-46de-8db7-80b6e4570971" name="AbstractCover" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e8dcd17b-ca97-4a60-bf75-833c86af795f" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b019bcf7-14b3-4cfb-a780-7cd72b789d6f" name="CocaColaCover" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="34d1619d-1260-4670-8680-8fe3a80622a8" />
+              <generalsInternal>
+                <generalization Id="5a114f91-e78a-4be6-a756-a3223f0873d9" isSubstitutable="false">
+                  <classMoniker Id="e0057790-d1bc-46de-8db7-80b6e4570971" LastKnownName="AbstractCover" />
+                  <elementDefinition Id="aaac57cf-6c07-4ab5-98bf-2770989ba004" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="578fbdd3-50d9-40b1-8121-c345df04f9a1" name="PepsiCover" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2e7bc7ff-a1d0-4f65-825c-b9a0a4d93031" />
+              <generalsInternal>
+                <generalization Id="e36f149b-5381-4a54-99f7-803425b3ba2d" isSubstitutable="false">
+                  <classMoniker Id="e0057790-d1bc-46de-8db7-80b6e4570971" LastKnownName="AbstractCover" />
+                  <elementDefinition Id="b195303d-2858-4cdc-84a9-1e195a3879f1" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="f31942c5-815d-4374-90c7-9fe516a92326" name="ModelingAbstractFactory">
+    <elementDefinition Id="ea2b64a4-767d-4ceb-ab4a-c5a30adc275a" />
+  </package>
+</logicalClassDesignerModel>

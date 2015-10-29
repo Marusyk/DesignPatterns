@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_LazyInit", "LazyInit\001_LazyInit.csproj", "{8C113C31-5A5D-4B90-8198-DE0A5E76B86F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_LazyInit", "LazyInit2\002_LazyInit.csproj", "{5D0D7FA0-D3C0-4CB4-B50C-641C82B92694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_LazyInit", "LazyInit3\003_LazyInit.csproj", "{B243E4BE-51C9-4E4F-AF1D-C50F96E68F4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C113C31-5A5D-4B90-8198-DE0A5E76B86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C113C31-5A5D-4B90-8198-DE0A5E76B86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C113C31-5A5D-4B90-8198-DE0A5E76B86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C113C31-5A5D-4B90-8198-DE0A5E76B86F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0D7FA0-D3C0-4CB4-B50C-641C82B92694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0D7FA0-D3C0-4CB4-B50C-641C82B92694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0D7FA0-D3C0-4CB4-B50C-641C82B92694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0D7FA0-D3C0-4CB4-B50C-641C82B92694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B243E4BE-51C9-4E4F-AF1D-C50F96E68F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B243E4BE-51C9-4E4F-AF1D-C50F96E68F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B243E4BE-51C9-4E4F-AF1D-C50F96E68F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B243E4BE-51C9-4E4F-AF1D-C50F96E68F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

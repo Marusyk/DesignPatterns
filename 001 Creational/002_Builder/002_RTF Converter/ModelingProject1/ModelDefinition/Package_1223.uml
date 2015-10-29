@@ -1,0 +1,1269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="09116e9a-00f9-4335-b142-250acd2cfa9b"
+  name="Document_Converter"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="46969496-0a84-4328-9b0f-c41679d45676"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDocument_Converter"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f706dce3-bc03-4ccc-91a0-d2fb86ef2cef"
+        name="PDFText"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="58a8e82b-a400-4fa8-ad3c-4ebf71d98705"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ff5abd56-39cc-4974-8f75-75ca74f9ed57"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e1aa62de-41bb-49d7-933b-3580bf9cf2f7">
+                <propertyInstance
+                  Id="879f119b-f2d4-411e-9f0f-b05d1364490e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b363edfb-dccc-4b5c-a6fb-ca1fb6ccb026">
+                <propertyInstance
+                  Id="e84fdf62-dfa7-4a91-a8ab-8a5cc2e5f0e9"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cf58a0cd-d3ec-4649-b9a4-02432a8fe307">
+                <propertyInstance
+                  Id="47779875-0cbb-4639-9533-589f8920e045"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ecb16e40-ca22-4692-8950-58e62e6c159a">
+                <propertyInstance
+                  Id="716f623d-f533-4536-8460-c83ffe389d03"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8286bc4f-80d5-4521-ac37-d13c11da1d6a">
+                <propertyInstance
+                  Id="4a396955-2512-4fe2-9644-bc0b80ad68f9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0ad242dd-f439-4cd3-b69f-b913dc38fe32"
+            name="pdfData"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b93ce464-ecc6-4262-a738-52d7734237c4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3DpdfData"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="66364dd8-34ed-4444-a113-e41a73b36085"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72b66ff7-1cd5-47ec-9195-c15995d1f670">
+                    <propertyInstance
+                      Id="99561c21-b05b-4d61-bb18-bbeb92416342"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77815123-9c88-4938-8b13-6c7769d3da5f">
+                    <propertyInstance
+                      Id="bfe0682f-ceb2-4247-9a28-e09506ec759a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="374a9664-c42a-4983-8cf9-d03b0511d7d4">
+                    <propertyInstance
+                      Id="03f2d01a-05de-414a-9610-b706eca21fe9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3669679-b327-4879-8d52-b543cd21837f">
+                    <propertyInstance
+                      Id="9aca0533-e452-4168-b21c-0bab53c0b71f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d9e8ecd-247e-4baf-837d-fb713d6ed168">
+                    <propertyInstance
+                      Id="405c18f2-deba-4d2b-a326-e4da8eb90b0e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f60f1465-53e1-4bd9-a567-8f05f57abc20"
+                LastKnownName="pdfDocument"
+                LastKnownLocation="Package1_1223.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="163cb282-2af0-4c6d-91f9-228c717f1c90"
+            name="currentPDFfont"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5e8a9c4b-4e10-44fc-ba50-d21c7c2f49c4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3DcurrentPDFfont"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aa4d4faa-3c73-478c-b966-d237997d10f8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d679bfcf-e569-49e2-9e32-9eca6fe1870e">
+                    <propertyInstance
+                      Id="5977f7b9-9391-4f7b-bfde-d553b9c0e308"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc881e31-eccd-46ab-aded-7b5ef72dcd5c">
+                    <propertyInstance
+                      Id="8d75aa1f-6ca8-4208-9642-e645c9861fc2"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e15c4cf5-23f4-4e9c-9457-cd9594a412d0">
+                    <propertyInstance
+                      Id="f2bec0e2-ed6b-429c-8f49-1469794dd0fb"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9559fce-d1a1-411b-ad78-fc97ff8339a9">
+                    <propertyInstance
+                      Id="cb1a2cf9-4fa9-4c3d-8dec-5b9404dea09c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0836c26e-b118-4d13-bd80-1eae6c7542dc">
+                    <propertyInstance
+                      Id="41dc877c-5af8-4a90-b897-ad39bd7dad5e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="36620773-90d8-492d-afa4-782ee6e35c21"
+                LastKnownName="pdfAbstractFont"
+                LastKnownLocation="Package2_1223.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e60540e5-4005-438a-a766-1d6305289234"
+            name="currentCharElem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a1064e31-4210-4765-8682-9756f2f829e0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3DcurrentCharElem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="259f00f6-3c06-4cee-9e57-e2d5024f07cb"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac5d53fc-f1f5-4367-a520-a42e3a5e0138">
+                    <propertyInstance
+                      Id="db673587-632b-4c14-a941-6db6694bf9b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="811be7dd-94f1-4407-8e8b-4f1d58fdddd8">
+                    <propertyInstance
+                      Id="457c65d4-6d1f-4c76-8eaa-6a0df37810b8"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23a8565f-7890-443e-9408-9bce087c6fae">
+                    <propertyInstance
+                      Id="a263f09b-947b-4f83-8f96-fdcc27a97bc4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2940286d-7467-40f7-a76f-ca2a073f570b">
+                    <propertyInstance
+                      Id="0b842c6a-a001-4bab-980c-7e61e99f7992"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dac60656-8cc3-433a-8f19-ec5a1746f7cf">
+                    <propertyInstance
+                      Id="47e4138b-ce2d-4c4c-a21d-b39f98b3a04c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7d34f400-eb11-4cc7-8fdd-90f6c327c6b9"
+                LastKnownName="textElement"
+                LastKnownLocation="Package3_1223.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="11ed34fa-7d99-4b14-8b4c-541c6b3700d6"
+            name="lastElemPostionY"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="35962b64-c960-4146-863f-22db92b1b081"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3DlastElemPostionY"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2379c766-6548-4c41-9f5e-fa0e4085070b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ece8746-9fd4-4a46-81d0-7f7a8dcabcd1">
+                    <propertyInstance
+                      Id="30df14b1-9b89-4404-b096-c6162a6acfc4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b275b729-31db-440d-a60e-69e33f85ae84">
+                    <propertyInstance
+                      Id="0ab1781e-e7b9-4f55-a73b-d08120cc884c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28d046b5-36a1-438f-abfb-595d8792fa6f">
+                    <propertyInstance
+                      Id="9fe12068-59a0-4147-879d-c6cd815873fb"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0fdfd62-7a85-49f9-91f7-d8b8064aaea1">
+                    <propertyInstance
+                      Id="c9d67f77-ca59-4705-a18a-59fe059076de"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4f797b8-579d-40f3-960e-af1ceddc4985">
+                    <propertyInstance
+                      Id="4b1ff4ac-c3c7-4e4b-a9cd-51f8ac60a675"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f3b73469-ac43-42ea-8efc-6b3c3046a73a"
+            name="PDFText"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="47618a79-24cb-41a1-b53e-be6eb192b996"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ef5f1a80-7de5-41f8-9aec-81e1608d136e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="426140c4-aa69-4c6b-afa0-6dcd0344a1af">
+                    <propertyInstance
+                      Id="c39279f4-81fe-4f82-9dcc-9957aac98453"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a945ef8-f3b3-457c-b7ed-ccccc2479fb9">
+                    <propertyInstance
+                      Id="ae7502c3-ab29-4f54-b7a8-f1cb6f1395d7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="254c20e7-54fc-4779-ada8-609b7a50194c">
+                    <propertyInstance
+                      Id="c81af8b0-4dff-41f4-bbf3-a7ba70ce7d25"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcd8662f-92ae-44c0-a39d-9431247cb263">
+                    <propertyInstance
+                      Id="171404f8-c541-4903-8784-cfaac2c66294"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7df58d80-3dcc-497f-af12-9c23931de21b">
+                    <propertyInstance
+                      Id="7dec31b5-cce1-4708-b3e0-feb4743cf389"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3153f825-528e-4395-b15c-b42451e5fa63">
+                    <propertyInstance
+                      Id="8aa8fc64-45ec-494b-97f7-fabd50730b3d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="51f4a86a-e8d7-4dee-a394-1a82fa5c88ec"
+            name="AddChar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="066e92d6-4f58-4964-9c40-b008f52ce8e9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D(Name%3DAddChar OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DChar)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="022ac910-c5c2-4a8b-a00e-d2bdcd2fc589"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4458b9d-afa7-489d-a6ba-bf453f04ec7a">
+                    <propertyInstance
+                      Id="f2190685-b7eb-4518-9018-a579b5e3f478"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fea9997f-3600-41ae-889d-2c062f582854">
+                    <propertyInstance
+                      Id="18902adc-0c50-4b41-bc7f-a1978c6ecb83"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2a67b44-12a5-4eeb-ba79-e42d7d63501d">
+                    <propertyInstance
+                      Id="b3a6f3c7-1278-488d-83e8-450119134a7f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3981cc38-0a86-455d-b349-fe1aa880693a">
+                    <propertyInstance
+                      Id="06a7ca2d-5c9f-48ca-afb4-1ed379f3edc5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73a61b43-be1e-4f3d-baec-e89eef545841">
+                    <propertyInstance
+                      Id="4593d80b-e7ec-4649-8a56-43b53f54edbe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="290f379b-f18f-413a-b84e-8ebfa1d3f23e">
+                    <propertyInstance
+                      Id="ebceb6fa-8582-44fa-886b-d41280bcd083"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e3a8d26-d9ed-40f3-8dcc-d4b2765a8a87"
+                  name="character"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e9476496-ed1a-4de9-9905-0a78db4b73da"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D(Name%3DAddChar OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DChar)]) ParameterIdentifier%3Dcharacter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ca88a886-4d50-4273-ac48-d2738804296a"
+                      LastKnownName="Char"
+                      LastKnownLocation="Package1_1221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="56e91026-32e2-403d-b682-df8c68b790e8"
+            name="NewLine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0230e9f5-023a-4b5a-a683-06f267c95872"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3DNewLine"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2335b3d7-0ad9-4648-bae3-5ba485ed6b3d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7131766f-0b37-4852-9b15-523dda23a19b">
+                    <propertyInstance
+                      Id="b021c36c-5c36-49f7-ba30-801b7d56c416"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebc38cef-7762-4d23-9c6e-451548d2c2f1">
+                    <propertyInstance
+                      Id="c1681d42-bfd8-45ac-8242-298d936594a5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b33624ff-eed6-4b3e-b815-039ecad294ff">
+                    <propertyInstance
+                      Id="51aaee3a-5a9d-4446-b215-f4c1d5d0731f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebc188fb-9e9c-4c3e-bd1b-e17710efe834">
+                    <propertyInstance
+                      Id="a4f8effa-65fd-46ae-b6d3-66b8d3e3e52f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cebc13c-2aa7-433b-b67a-a644d63fc944">
+                    <propertyInstance
+                      Id="c8741990-b433-416a-acac-8afcac7540f7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0ef83b9-0673-4403-8429-bf7c456674cc">
+                    <propertyInstance
+                      Id="d11fc57c-9ae2-4a13-85a4-a6a203101cc6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="d89068c4-5238-4397-8132-11dc33cf68db"
+            name="FontToItalic"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e0cc9fbc-d23f-4987-8672-a7b35c774ae0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D(Name%3DFontToItalic OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9fb839e-db2c-452e-83ef-3c68f0cc6839"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb9ed1c0-5e0b-412b-b747-2fccf06a2e06">
+                    <propertyInstance
+                      Id="1903e938-4c7b-43e5-a614-3f592369cfb7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01bb17dc-2c3f-491e-80be-7ed3caee9c5f">
+                    <propertyInstance
+                      Id="cf109f2f-b9cf-4536-a735-7d9b39c192c0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87ccc076-bec7-432f-8fb9-c5a33efaf680">
+                    <propertyInstance
+                      Id="cb16338c-7fb4-461a-82ab-69a081276a68"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="923e7e6d-8425-4c21-9e97-7bcf0d1ff0cd">
+                    <propertyInstance
+                      Id="80c8438c-3739-4990-87ad-e7d7ad42fb4e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="845059ec-04c3-4401-83a4-abc7d3205423">
+                    <propertyInstance
+                      Id="2690a0ac-7244-47f1-9b10-f839bd244e54"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0af503b9-1872-4617-a0de-7dd871c77496">
+                    <propertyInstance
+                      Id="b7618cf1-38a8-4cb3-8f05-23cca323a2dd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="10df2506-6793-44f1-9da6-f918bd05f914"
+                  name="isItalic"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3c91ac43-3fd1-4d24-afe2-163ae67e977c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D(Name%3DFontToItalic OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DisItalic"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a4c18e5b-6b4b-4d69-817d-3354560c4f74"
+            name="FontToBold"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2d6395fe-4bb2-4935-8362-ba1cb40f72d8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D(Name%3DFontToBold OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c74fa9da-37c8-49c3-ac7e-d362824f117a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="840c33a0-7125-4298-a1a8-21202bff00fa">
+                    <propertyInstance
+                      Id="ca1a5a7e-4537-4326-a546-7117c23054ee"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfbc73ab-3342-4c3b-a74d-ddc65a1e8a53">
+                    <propertyInstance
+                      Id="3f24bfa0-22fb-42c7-b0b6-1a98ae760bd1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f2f5dc5-faf5-46b7-a029-1480da0acf1c">
+                    <propertyInstance
+                      Id="4a8e6106-cfd6-4e16-80b6-fc3ace1b0ddd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ae8b733-fc55-4bfc-a150-daac7d6d60dd">
+                    <propertyInstance
+                      Id="6e042a71-3f10-405d-a048-268ef07c34e6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cf40943-a9ca-4268-b6f8-37ba2520e5d7">
+                    <propertyInstance
+                      Id="df17c955-c48f-4c45-8aa4-02e87a5d20b7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a17e3e3d-7ce8-4ec6-83ef-d0c82a6c61a0">
+                    <propertyInstance
+                      Id="b43fa82a-4855-4b99-a338-c161b91a17c7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="47feb228-33c6-4694-8851-1f18798db62c"
+                  name="isBold"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dfb76bd4-8dde-4e53-86a7-f644292ee3e1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D(Name%3DFontToBold OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DisBold"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fdf9aa18-7799-406d-9ad8-c1ecdffd87b9"
+            name="WriteToFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e09ac951-c3c9-4ad9-9f9d-7f8f985e1633"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D(Name%3DWriteToFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3a228722-0bf7-4f4e-8e5f-cf35eb1e373b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26719085-9e76-4347-bd0c-ed82ca898e8d">
+                    <propertyInstance
+                      Id="efd48883-c48d-467d-8f0a-e6a11877037e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03181355-c21d-415f-bd2a-0ce72f25d3ce">
+                    <propertyInstance
+                      Id="c025deb5-052b-4ea7-9d52-5efd2fd96fbf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="712570ff-ed89-411f-9174-29162c1d9cdf">
+                    <propertyInstance
+                      Id="c12b3323-f292-4133-a1b3-77c1a7c96976"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="698b3356-bce9-4a7d-9b91-4bacbc6e8cae">
+                    <propertyInstance
+                      Id="c7995fc6-0828-44f1-b532-13881b4b7702"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca5bb2b2-caf2-47a5-8744-928916761c73">
+                    <propertyInstance
+                      Id="a7a6551e-757a-4f5b-8696-67552f04a47e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cf8baa0-1af2-4d40-9a20-9e9774543925">
+                    <propertyInstance
+                      Id="f3f49b44-c2c8-4a9a-8f98-2126b194a722"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="721ba68e-6f76-4268-94f8-e58ee2b4c858"
+                  name="p"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="86eb6d23-f8a7-4704-84ee-1feddb637895"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DPDFText Member%3D(Name%3DWriteToFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dp"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ba587322-a2de-4cdb-b919-2d45c4fe9375"
+        name="TextConverter"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d23b9b84-e91f-482a-a9aa-7eb4f49dd0d3"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="95b4d71e-ffef-4182-aac3-2cc4efa50c58"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a49b1566-8931-4a4c-bf29-343aebd6214c">
+                <propertyInstance
+                  Id="7c6f512d-965a-429c-b08f-6c71bbacaeeb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9fda0a9c-4a4b-44e9-bb5a-45ed594f7953">
+                <propertyInstance
+                  Id="6e1e581f-13bb-4b95-a775-8ee6630a3ec5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="096b99a7-4559-444b-afa6-5de3143f9258">
+                <propertyInstance
+                  Id="3ab7f3c6-3317-4f47-826c-f89bbf76f512"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b1ebf81-404b-475c-8b2b-e3fe9ffcb1b6">
+                <propertyInstance
+                  Id="cd8f8efd-c9d3-42a2-8f81-ea53798a681b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="20cefc37-859b-4965-8b0d-84205b6c851b">
+                <propertyInstance
+                  Id="de4fac9b-9d29-4915-816e-2d54ee918e00"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1d5f280f-1b1c-425a-ac59-6a1709bf58d8"
+            name="ConvertCharacter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="066c91da-379b-414a-be00-9beb07939e22"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter Member%3D(Name%3DConvertCharacter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DChar)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3d9aaeb0-8473-4d18-b8ae-a9ef622d35e4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80cc8dbb-04ab-4f73-b01a-8ead06f17091">
+                    <propertyInstance
+                      Id="19a8ee44-5f04-4852-bb5e-e32c8b7c6951"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d446473-07ca-4f20-aeff-ab86113a027e">
+                    <propertyInstance
+                      Id="c1c27f0d-3167-4ad8-b3c1-f0a1988f82f1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee6b0150-301e-431a-8599-09c4fe8b21b0">
+                    <propertyInstance
+                      Id="0c5cf968-d1b0-467c-87ee-9fadae79d444"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48831564-fe2d-49f7-adf3-ee9c62dc3597">
+                    <propertyInstance
+                      Id="8d07ae0a-19fc-46d2-b3e7-5a468bce639d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c5c505a-3a0d-4d08-9985-f0a8ba9229ea">
+                    <propertyInstance
+                      Id="b4b088f3-5988-4ba2-8465-e759963a4585"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fb11617-2b1e-4e38-9054-a1e89845f6bb">
+                    <propertyInstance
+                      Id="87c4dae6-527c-4898-a062-0a90af1f66d8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="59e03ad3-4ba7-4afc-b100-4019a8483c5f"
+                  name="character"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="82fa3104-ca8b-4a4f-9495-e5a5c898dead"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter Member%3D(Name%3DConvertCharacter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DChar)]) ParameterIdentifier%3Dcharacter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ca88a886-4d50-4273-ac48-d2738804296a"
+                      LastKnownName="Char"
+                      LastKnownLocation="Package1_1221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6690f070-052b-4bcd-8af2-250a0a58dc0b"
+            name="ConvertBold"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e89cd18b-7f9e-42da-9ec8-2b38a91f35c3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter Member%3D(Name%3DConvertBold OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a127061c-967a-47ca-9955-6eaeae1e3d62"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf518f88-31fa-42cf-9b9d-d56a9e0db711">
+                    <propertyInstance
+                      Id="f87a420b-413c-4dc4-b3ac-fd190ce09694"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8498d6b-7bb7-4cd2-bdfb-90e59b307279">
+                    <propertyInstance
+                      Id="2779bc41-95e6-421e-aa17-68c557639fd1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b81eb6eb-1db8-4c82-9c8d-779eaf77b446">
+                    <propertyInstance
+                      Id="cf1bf49c-fd35-4460-bfb5-a1b6b9580591"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a4f1401-d5b7-4d48-b873-e66bbaa94d35">
+                    <propertyInstance
+                      Id="c17cb32d-1ea9-47ae-92d7-aa469a53072d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eace2e22-330b-41d7-a4df-c780d4d1da7f">
+                    <propertyInstance
+                      Id="0b562e1c-ef89-4dbf-9a10-22f1a75678f9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fca9589-1dc4-4429-9d64-b2d987f7232f">
+                    <propertyInstance
+                      Id="7ce0ad1a-4159-4716-96d2-32ca53186440"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5f9bc934-d13c-426b-ad30-e20c58e786f7"
+                  name="isBold"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9cf824a1-9f9c-42be-b8e4-23db3d8f6a41"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter Member%3D(Name%3DConvertBold OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DisBold"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="54ef66cb-7db3-4297-b320-6be05e7b8d6f"
+            name="ConvertItalic"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a03b4338-a912-4296-b10c-23e97212a6ae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter Member%3D(Name%3DConvertItalic OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="59e92d13-26a7-4767-96e4-0e3cb43346ef"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66dfea29-539b-4c79-ace6-506f34a6cfb1">
+                    <propertyInstance
+                      Id="a1c66bde-4222-428b-8fa2-8f8a16d37f0e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebeac9fe-7812-467d-bb26-bb2b181f4eb4">
+                    <propertyInstance
+                      Id="a45c054e-06c0-44b9-8553-3c2f08d50653"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="023327d5-e77d-4618-95d4-32a5015e45ee">
+                    <propertyInstance
+                      Id="4d705ec3-bb88-4e3d-ab79-624457b87070"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9147b019-4c66-4c09-bef9-d9e3306e9e2e">
+                    <propertyInstance
+                      Id="9f947dff-b7ef-4fb8-839b-85a0eaa52efd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ba629c6-649a-43b7-a101-e33aa6bb399e">
+                    <propertyInstance
+                      Id="cc3b22ad-f34c-4b8f-a727-4e4031e8c5e4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="207f6b46-a507-4297-881d-35a76202a2fe">
+                    <propertyInstance
+                      Id="a6acbaee-dcdc-4f20-a6fc-f4dcc3c0523d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0f95197b-a4aa-475b-8174-6d1cc635060a"
+                  name="isItalic"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3b447861-56fe-4145-8814-fb1ba99015f0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter Member%3D(Name%3DConvertItalic OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DisItalic"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="489b53dd-1138-4b95-ac04-b4c7176444f8"
+            name="ConvertParagraph"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5d803aa4-8636-4d1c-b249-6e8ed358a7b5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter Member%3DConvertParagraph"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="69a16b53-554e-4807-9d86-7d3fad32ab4a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c99eddde-44c3-4859-bc6e-9192835e7d0b">
+                    <propertyInstance
+                      Id="1d828fe5-2a50-44b0-8c20-eb61d1c4b818"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="827d7f45-c088-4f95-80e4-5db65f1cdf7f">
+                    <propertyInstance
+                      Id="39dfe408-faf8-4f66-8355-0b406ba66393"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="060290ef-a510-44d7-a253-d4a1397acf14">
+                    <propertyInstance
+                      Id="542ae1f7-e136-4ede-b2e1-3810b7f2b7de"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52bc1239-2a9a-4c03-837c-ad28315c2e15">
+                    <propertyInstance
+                      Id="e7967466-e1f5-4da0-ae52-5d3c40f921f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63b3c3f7-89bd-442a-b47e-0738fefe7a4f">
+                    <propertyInstance
+                      Id="6c917a34-b698-482a-aa17-bc1d79103e71"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c332156e-6e82-465c-bf75-8ba5ae569fab">
+                    <propertyInstance
+                      Id="45b72a73-12f0-42af-813d-06cd2891ef7d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="438cdb12-b287-4cdb-bf6a-06816581edf5"
+            name="TextConverter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c6f14a27-9928-44ed-afd8-a9fce704e81f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FDocument_Converter.exe&quot; Namespace%3DDocument_Converter Type%3DTextConverter Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="11379b8f-b8d6-45cc-928f-6b7dc7aab250"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="974b02e4-0347-4166-8e06-2870de1632d0">
+                    <propertyInstance
+                      Id="ba9757ae-e98f-436c-b2dd-5bbe600f490f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="541fe79c-691c-4088-8017-cdf4a7dadda8">
+                    <propertyInstance
+                      Id="acd44c58-547c-4579-9da5-ca17a2c54cdf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5fcac2b-4b53-4fcc-81ef-199844fbef9c">
+                    <propertyInstance
+                      Id="3a0f7263-0b3f-49c0-9aca-5c7de76fd10b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db69f79c-d6c3-4a9f-8fb9-7df71a102413">
+                    <propertyInstance
+                      Id="69f3eb7f-aab9-486d-a062-f4802e10f4c5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3df816d4-0c7a-4a0e-b076-314fee591f04">
+                    <propertyInstance
+                      Id="e90f3815-c304-4b42-a116-facd22558b15"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56fb1337-15aa-47ec-9b81-4bcad1237c5b">
+                    <propertyInstance
+                      Id="c0e06eac-cf6a-4a19-97a4-cf41122644ba"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

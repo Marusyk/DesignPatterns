@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ddf1d619-4214-42aa-88e3-c54ab894b29b" name="UMLClassDiagram" linkedPackageId="4fa4a79c-a375-4226-90d6-d54d75e464f0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="78081440-6c82-4062-bea3-c0b8ac3bb078" name="Bridge">
+        <elementDefinition Id="3d51fdc7-ad23-4b91-a3ba-7d7f8cccdec3" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="34226b2e-7bd1-4b5a-ac06-d643fc424b1b" name="Shape" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b49664ef-4deb-4c28-abed-4576f274bf47" />
+              <targetEnds>
+                <association Id="43cb65ad-eece-4823-9cf2-1eb76589a666" isDerived="false" sourceEndRoleName="Shape" targetEndRoleName="LineStyle" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="fe10bb6d-58fb-440f-b796-906d66ad9e28" LastKnownName="LineStyle" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="3ab058bd-fd06-41e5-be61-de803b5850f4" name="Shape" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="6e609037-2c47-41d4-8402-8018c35967e5" name="Lower">
+                            <elementDefinition Id="2526b19d-290d-48a0-976f-795b08c7b60f" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="2e2d3b99-9b08-4bb6-8346-ff49488b7894" name="Upper">
+                            <elementDefinition Id="b04b7416-8cf8-40ba-b52d-d80b1420dafe" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="59cfe59a-f35e-452f-875c-71af07f311e5" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="0fb0c9f9-e68a-43f8-8987-f2de1dc1cad1" name="LineStyle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="7a0cf19d-19f0-40e6-afc1-e33549f7ef2b" name="Lower">
+                            <elementDefinition Id="1f821573-b3af-4e43-8360-b53f1928f462" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="059180b5-b982-41e3-b179-5aa3324ba7e5" name="Upper">
+                            <elementDefinition Id="2ae58493-b665-4aaa-b7f4-68f82acd82f0" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="63d40013-f49b-4e0c-a5ee-b01b113e74d0" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="7afd7b24-ae76-4d1c-8501-a9167b66c01b" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="d3b8a1c8-0893-4246-8038-4bdfaa26d4da" name="graphics" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2e545694-23da-4d24-bdfe-78de9d70373b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a27af943-8d17-4a2e-a5cd-925863a8206f" LastKnownName="Graphics" />
+                  </type_NamedElement>
+                </property>
+                <property Id="1d8a9685-e012-45dc-82cf-ecf8bd35cc18" name="pen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="126b3534-1132-40ae-bb68-2d5009ce6ddc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b1a38769-dceb-46e8-8c89-da6eaea6019a" LastKnownName="Pen" />
+                  </type_NamedElement>
+                </property>
+                <property Id="e0eb0082-9ef5-4efc-bbd1-2d78f4d591bd" name="implementor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4232b71a-c790-445f-974d-765ac8241d2c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2e74dc78-63ed-49ff-8d2d-323496649040" LastKnownName="LineStyle" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="cc42afcf-d687-47d4-8563-53bcae91f6de" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a64bab0c-318d-4994-bafa-e0c2dc57dfcd" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="35ae374d-0f10-4521-a1a7-2c881ede50cc" name="Form form" direction="In" isUnique="false">
+                        <elementDefinition Id="cae043c7-18c3-411f-9aed-8d0ad750739e" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="87033620-f994-4422-8792-20d213649342" name="Color color" direction="In" isUnique="false">
+                        <elementDefinition Id="98fbaab5-e398-46ac-88b1-949f73c07620" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2c08e698-9454-47c6-ad8b-3ad42d9d176c" direction="Return" isUnique="false">
+                        <elementDefinition Id="f93b90f9-bf8e-4b53-ac66-32fedd318d88" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4a6d314d-48b9-4f52-b26e-ee5a89d18316" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1806589e-5d64-4abf-8525-a90beb1eda38" name="Pentagon" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0f40f16e-d453-48bd-b3cd-e0540ce1f705" />
+              <generalsInternal>
+                <generalization Id="54c62e07-b85d-4f41-b008-3487eef132e3" isSubstitutable="false">
+                  <classMoniker Id="34226b2e-7bd1-4b5a-ac06-d643fc424b1b" LastKnownName="Shape" />
+                  <elementDefinition Id="d6888eb2-51fb-4c85-adfd-e5782c1b76ae" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="fc60945e-3f40-4a65-82f4-202f798441b3" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6302c93a-27a5-42d7-99bd-ddd47f063512" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e07516b4-709c-4148-9092-5d3ac7fe0ca6" name="Form form" direction="In" isUnique="false">
+                        <elementDefinition Id="1a1e85ec-da56-4221-8208-330d40f5f831" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6cb8c45f-c2c8-46e4-8925-8f52816b8c50" name="Color color" direction="In" isUnique="false">
+                        <elementDefinition Id="dbbde833-fb49-4cb6-ad81-34cd1a5ab8eb" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="11eec4e4-dfb8-4b04-a836-8169c1f0019d" direction="Return" isUnique="false">
+                        <elementDefinition Id="84b1090c-736a-49fe-8103-95c87bd06872" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4a6d314d-48b9-4f52-b26e-ee5a89d18316" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="71bfa9e5-4a0e-4f09-aa81-a974243c0de6" name="Square" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5f5d60c6-a394-4efb-821a-be57b0a04e1b" />
+              <generalsInternal>
+                <generalization Id="8a40085b-a241-472e-953d-b4cbd12ae1da" isSubstitutable="false">
+                  <classMoniker Id="34226b2e-7bd1-4b5a-ac06-d643fc424b1b" LastKnownName="Shape" />
+                  <elementDefinition Id="6997a0d2-32b3-4add-841c-7a5cc8ba86c8" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="d2f4aac2-3665-4e93-89a7-64f77728a1a5" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7160f5ba-0f35-457e-9e70-45487ac79acf" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7ed8630d-c66a-4d16-8b0e-f152df030286" name="Form form" direction="In" isUnique="false">
+                        <elementDefinition Id="b60b4964-cc73-402a-89f6-cc836e8cf0dc" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="64403f12-f549-4dba-bab5-a62c979f235c" name="Color color" direction="In" isUnique="false">
+                        <elementDefinition Id="4f56fd28-6cd9-400c-9a93-389ee90524df" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="eb51beb3-08ae-4a38-9a0b-d7671d494b2b" direction="Return" isUnique="false">
+                        <elementDefinition Id="e840aef0-9199-46d4-ad46-d506c6e39754" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4a6d314d-48b9-4f52-b26e-ee5a89d18316" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e1cf463a-3fe6-4e9f-899e-bd6a674037eb" name="Triangle" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f916e24e-6431-4d84-b8e3-2bae7ac894ea" />
+              <generalsInternal>
+                <generalization Id="5e082960-33ef-4a75-91ab-318fb9a8afe7" isSubstitutable="false">
+                  <classMoniker Id="34226b2e-7bd1-4b5a-ac06-d643fc424b1b" LastKnownName="Shape" />
+                  <elementDefinition Id="f35a39ad-f80d-491e-8fd5-a9b3607a0b39" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="2f0c3488-b897-4e6a-a5be-a2ac74e77b98" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4ad49d33-aab2-402b-9d8a-2f3bfc104688" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2e814daa-dd76-4d22-a100-2f2316f8593a" name="Form form" direction="In" isUnique="false">
+                        <elementDefinition Id="fec60db3-aa34-452d-9d3f-edc85aa95451" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1a44b846-e0fb-459c-b075-89bd234cec97" name="Color color" direction="In" isUnique="false">
+                        <elementDefinition Id="bc97b018-503b-49ac-babd-88325dd7ce05" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d2bb0f28-718c-441d-9f4c-8c52bb63275e" direction="Return" isUnique="false">
+                        <elementDefinition Id="e5661e2a-5af5-4a8c-a100-f5497bc33cae" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4a6d314d-48b9-4f52-b26e-ee5a89d18316" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="fe10bb6d-58fb-440f-b796-906d66ad9e28" name="LineStyle" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="7e2717c3-4972-4cb1-a208-c9d862460649" />
+              <ownedOperationsInternal>
+                <operation Id="d9aea628-322c-4ba2-bb7f-a6285ad4695c" name="Draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="15b9b3e3-ef24-4027-bd79-3bf101f837af" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bcb111d4-0b67-49bc-b615-3c920e6dcadc" name="Color color" direction="In" isUnique="false">
+                        <elementDefinition Id="9ee07487-6785-49c6-8695-79b04863a037" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f7dcb0a7-b0d8-47c9-8207-3df23cbe1e41" direction="Return" isUnique="false">
+                        <elementDefinition Id="3a6e53dc-aefa-4b3a-a46b-6943a2bbf892" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b1a38769-dceb-46e8-8c89-da6eaea6019a" LastKnownName="Pen" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="fca90cba-30c4-4c60-a8ed-b2487892fa74" name="DotLine" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ac950e59-3044-4531-b228-6037260c152c" />
+              <generalsInternal>
+                <generalization Id="d026036f-1e2c-4f67-bdb7-68ce34cf59a5" isSubstitutable="false">
+                  <classMoniker Id="fe10bb6d-58fb-440f-b796-906d66ad9e28" LastKnownName="LineStyle" />
+                  <elementDefinition Id="20254b0e-c550-4024-a098-4817aff86692" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="03f2e0a5-3762-4dfa-9c14-8e8d744f7607" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3b1c6658-47bc-4351-a272-b789066d5adc" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5ecb0ee5-39b3-4f05-ac1d-69467e624524" name="Color color" direction="In" isUnique="false">
+                        <elementDefinition Id="402bb155-d6a1-415f-8eaf-24dd1aac147e" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fb4a2c9c-e89a-489c-807a-c75a1e8ac2ae" direction="Return" isUnique="false">
+                        <elementDefinition Id="a8d9e3f7-207a-4703-b96b-458a34df47e1" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b1a38769-dceb-46e8-8c89-da6eaea6019a" LastKnownName="Pen" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7dff71a9-65ec-4fde-9366-6cb0d9cc9031" name="DashDotLine" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="09163530-b4ab-47f7-ba71-4662253c1ba8" />
+              <generalsInternal>
+                <generalization Id="e7ac3f17-6145-4ec2-8af3-34b4e743a6be" isSubstitutable="false">
+                  <classMoniker Id="fe10bb6d-58fb-440f-b796-906d66ad9e28" LastKnownName="LineStyle" />
+                  <elementDefinition Id="4e286d77-9049-46ea-8c3f-447847498baa" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="30afc3da-8d89-48e1-ac18-d3d24405d7b6" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4c21a300-13ed-4bec-8aaf-9bdd1ebc86b6" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f31f165b-3410-443b-a651-09d4a1dcdbfa" name="Color color" direction="In" isUnique="false">
+                        <elementDefinition Id="882bf6f0-70cf-45d2-8fa4-b8362dddb8a1" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="92341ce3-6113-44f9-9124-cc3b30f60d6b" direction="Return" isUnique="false">
+                        <elementDefinition Id="992fe8c8-02a1-4209-b8e4-b5227a53414e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b1a38769-dceb-46e8-8c89-da6eaea6019a" LastKnownName="Pen" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="a27af943-8d17-4a2e-a5cd-925863a8206f" name="Graphics" isAbstract="false" isLeaf="false" cachedFullName="Graphics">
+        <elementDefinition Id="2461a308-80c7-41cb-bd46-8f5a0d0a5f36" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b1a38769-dceb-46e8-8c89-da6eaea6019a" name="Pen" isAbstract="false" isLeaf="false" cachedFullName="Pen">
+        <elementDefinition Id="8d888f3a-d12f-4603-8a7a-01532d617116" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2e74dc78-63ed-49ff-8d2d-323496649040" name="LineStyle" isAbstract="false" isLeaf="false" cachedFullName="LineStyle">
+        <elementDefinition Id="25afdc83-e205-483a-a1ad-dc936146873b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a6d314d-48b9-4f52-b26e-ee5a89d18316" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="ec7b3aa1-f466-4c12-b37c-c64833ca155d" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="4fa4a79c-a375-4226-90d6-d54d75e464f0" name="ModelingProject">
+    <elementDefinition Id="89a5ccc1-b18e-45b5-8a0e-8b1adb26c905" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a7567d39-0b82-4cc6-8dd5-2e9809caf51e">
+        <profileInstance Id="a5d1a3bd-df5e-4c65-b463-aab993c4fec4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2eb7c4b1-c751-4b68-899b-4d9fa0a73e22">
+        <profileInstance Id="93ed36a1-cabf-4968-b6a1-0a60ec8b5f4c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

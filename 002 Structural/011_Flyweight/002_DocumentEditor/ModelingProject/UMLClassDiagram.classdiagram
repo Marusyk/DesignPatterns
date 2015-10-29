@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="30501e16-34e8-4a0c-a41b-77f38030ec28" name="UMLClassDiagram" linkedPackageId="ab99a238-f1e4-4ad3-b025-9c35e55833a6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ad97d13c-d711-4656-8ca2-baaa041e9ad8" name="DocumentEditor">
+        <elementDefinition Id="bfdb5be4-e05b-4088-8fd1-ebd64b4861e6" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" name="Glyph" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5144f6fd-ab58-4b19-b5eb-110d9f230c98" />
+              <ownedOperationsInternal>
+                <operation Id="443fe48c-ae18-4691-b82c-586dd5996115" name="Draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="acfaaf7c-446b-4471-9d83-881f3d3dce51" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8330e6a1-adf8-40c9-86a8-f58e5bc4ddc9" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="8b0c776e-e88a-4c88-8efa-488d10debd70" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="ee87a367-2d97-44c9-8324-1f428c213a7e" name="Intersects" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="16767772-4d0f-46ca-8248-3afce8d10eff" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e3a596ff-853e-4a82-8b35-b675b9c9afec" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="77624582-1c28-468a-ae9a-bf333e77e89d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a6da96e2-6476-44b2-a014-5d00e34ffc5d" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="0bd142f7-4bdf-4345-ac59-a70e906c54c6" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0f2c17a6-3e0c-4e52-af6c-f201c90ce89b" name="Column" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="294271b6-c0af-4a40-b4b5-292d2cad72b4" />
+              <generalsInternal>
+                <generalization Id="28712083-ce36-42f5-9247-c86bee9b2932" isSubstitutable="false">
+                  <classMoniker Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" LastKnownName="Glyph" />
+                  <elementDefinition Id="5dc2e747-0d80-4cf1-a224-a4e75bd64b89" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="3ac3fe03-6323-4d90-a52c-845e5d1b62f0" isDerived="false" sourceEndRoleName="Column" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" LastKnownName="Glyph" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="94875491-6045-460a-9fdb-b49f0712f4ea" name="Column" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="6d65db07-c833-46df-ac23-e6a0697d8173" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a07ae8d2-d118-4935-bd4d-c3feea8d6a30" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="751265f5-af96-4f2d-b1ff-f128f90c4cc6" name="Lower" value="*">
+                            <elementDefinition Id="e2dba9a9-af5a-4d0d-a7a0-0655b6298108" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="d03b30b0-b4b2-4559-996d-712eae2ca98e" name="Upper" value="*">
+                            <elementDefinition Id="dc6ce19f-99f4-4541-b4ad-6cf047660d71" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="9f06ba45-ad1b-4778-a832-976b3d44ac9f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="bbfc8aa3-32b2-4fcf-88fe-efb93dbdba2f" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="a3d1b0a9-ec02-499c-b138-74cb78c166d3" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bc14b05b-d000-413b-9025-5205358fbe61" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="af3c3e8d-8df3-4506-8fac-959322501121" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="6a6dc1b4-9f04-42dd-97e3-5236fd74a779" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="bb8e705f-a5b0-4e4f-833a-0e2708d1dae8" name="Intersects" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5dbf3903-83e6-4270-9087-9b623adbec34" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6d23c71f-295b-4130-9185-b2461d24bbf5" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="4d6e6066-293c-41d7-9f09-dd372c4060aa" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ee9c05f7-1b50-4d05-bf13-14082b77f26e" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="ff31f831-c64b-4c76-a17b-359e683086c7" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9360e4cd-1043-4db8-ab42-fabd15874aa9" name="Character" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a41d7e5d-50c7-438b-818b-ee02ff67d753" />
+              <generalsInternal>
+                <generalization Id="b9de8ce1-b4a1-40fe-bc22-208748da93f4" isSubstitutable="false">
+                  <classMoniker Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" LastKnownName="Glyph" />
+                  <elementDefinition Id="5e3d4dc5-e5a5-47e1-958e-957443d43175" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="bd33f276-c56e-474e-82b1-5a2a583fe93d" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="310fda4e-7101-4e5d-b255-65be4595c493" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c1050464-7881-461c-95c6-aae9b584220d" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="df0e112a-6f14-4a33-9d5a-6a3e1a847021" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="46cb1cc1-cd5f-421d-9f68-ebe72a805d66" name="Intersects" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b0d8ff11-af57-498a-9e84-aea0078db180" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="931d7223-5519-45b1-bdea-2b2d3bff29ca" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="8a0f7cf2-67a3-4adb-b45b-ff549875f12d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d9d39674-bf01-4298-90d9-427a5d1d1541" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="eaf77a42-47af-4708-9c2f-d45cbb99e8a1" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f46faec3-78e1-45f5-894d-9efeee5cc575" name="Page" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c6fd4c66-b76d-4931-9af8-2d0fa889a7e1" />
+              <generalsInternal>
+                <generalization Id="3e6a4582-a934-4c55-880b-0df0077c6384" isSubstitutable="false">
+                  <classMoniker Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" LastKnownName="Glyph" />
+                  <elementDefinition Id="a5b1de81-9dc2-4d16-b122-35e72e72b35f" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="31b43f4f-9943-45fe-a8af-53fe34873a52" isDerived="false" sourceEndRoleName="Page" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" LastKnownName="Glyph" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="fe9f2498-5b2d-45c0-b098-08ccb95f67f1" name="Page" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="4d39252e-f4a5-43a5-adb9-b6825880b2a0" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="5ad73fbe-0554-4e89-8665-abe20a3e9e81" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="1557ad15-0d27-4f9a-9a84-2bd4015e510d" name="Lower" value="*">
+                            <elementDefinition Id="4ff2ef06-1af6-42f8-9098-2cac545cbc19" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="cb0f5a33-a76f-43b6-8855-27fe4acd4a32" name="Upper" value="*">
+                            <elementDefinition Id="c7411173-9fa9-40a3-9384-3b5e6e576035" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="a300afe8-e41c-4978-8657-aed82e646f50" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="6c9ac99e-c7d2-48b4-814d-40ef314a81ee" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="695f46bf-2f55-4647-b4df-0580942316b7" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5ea690ad-021f-4ab1-9f63-4459088982d3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c84ca6fe-8f9c-4eb3-96cc-dcd4464d55dc" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="d87c7428-1821-4b0f-9f42-4746d86013d9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1161f448-38d8-426e-be65-63f02ed50a35" name="Intersects" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="088a09b4-c891-4174-b3c1-0a0a3959df65" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2bb91b17-fa55-4f8f-84af-0d0812993235" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="15bad024-dee4-4356-96c8-543f07470826" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="74ecf393-0b70-4ed7-b3f1-53602f444252" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="7311fa2a-bcb1-4cfd-91f3-427571895781" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="4d203302-4d33-4044-a7d3-7d5879b52473" name="Row" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="7a6cc391-9ab2-478d-b049-347d2ab3a00b" />
+              <generalsInternal>
+                <generalization Id="cadd5c9e-0b8f-4bb3-a8f5-e68ea89e7b1d" isSubstitutable="false">
+                  <classMoniker Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" LastKnownName="Glyph" />
+                  <elementDefinition Id="c041e383-f0c6-4b0b-98c4-6f41b189ecf3" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="59447b47-09a1-4b2d-ae34-0b9b4bb14281" isDerived="false" sourceEndRoleName="Row" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" LastKnownName="Glyph" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d14575bc-679b-4296-8a27-200688192b60" name="Row" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="9ffa6943-b8ed-4543-98cd-d03e5e90f23c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="4132ed53-b6fd-4fe2-8a0d-8b4d289f27c9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="acb84ac1-1789-4d6c-ac06-a4d7fed23527" name="Lower" value="*">
+                            <elementDefinition Id="07b4ef90-3523-44c4-ac2c-de133642b309" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="00a57f02-455c-444f-9311-e696a205c50e" name="Upper" value="*">
+                            <elementDefinition Id="cbb3e4b9-c8c0-4d19-bacd-802e13747afb" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="9c1fafab-6c0f-4ac4-a03f-0f1f4a8a7933" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="ce3261f1-127c-4734-882d-f29c24aacf33" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="42a01b6c-ad82-449c-87cd-b7afe8b89b66" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4793ef1d-81de-4675-8512-0d92e4b1076e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="68b44818-3a15-4662-a23e-c071ffb89660" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="dafefbbf-c091-4ff6-a591-907bdb1d2759" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="578abe7f-06ae-45ac-8589-ccfc1cb07ff9" name="Intersects" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7c261d8d-183c-4522-b42e-c3cdf3fad4b9" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7f0837f6-c46a-4e94-8438-36e42d478ba9" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="324227a7-b62c-47a6-b82d-418e9d895f08" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c43938a3-e58f-4af2-beed-f3d02f43316d" name="Context" direction="In" isUnique="false">
+                        <elementDefinition Id="79792fab-ca8f-44f0-9896-7752ce80c3aa" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3d532eac-d25a-4298-ab26-a928053dcadb" name="GlyphFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f49dd6dc-605b-4087-b018-2b24461ec63a" />
+              <targetEnds>
+                <association Id="2f307a97-e5b8-481c-a5f2-ee07f461143e" isDerived="false" sourceEndRoleName="GlyphFactory" targetEndRoleName="Glyph" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="5cf13a6f-d543-435b-a6dd-606794d6bc1b" LastKnownName="Glyph" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="5a0bf618-cb55-40bf-995b-cefb9a658e44" name="GlyphFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="c1a6dce0-67c3-4e32-ac13-98734b7ba2e6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2216bb40-29f8-4b34-b9cc-87b84a5deda0" name="Glyph" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="9ea49176-d645-4405-b74a-591705c30d0c" name="Lower" value="*">
+                            <elementDefinition Id="6db84931-bc5d-4efa-b55f-96b3b6f50233" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="030940a4-a5e6-431f-a831-2a3f9417a342" name="Upper" value="*">
+                            <elementDefinition Id="8845e46e-bcb8-4474-a07b-e72711b1c55a" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="f60f4fdc-991e-428d-8067-b237c695276e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d1427104-fbbb-4aa0-9657-45458621af7a" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="216d852b-cc63-4b57-8552-e35498121de6" name="CreateCharacter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0777bec1-df06-47d0-b238-642a0800eb43" />
+                </operation>
+                <operation Id="41d6f397-59ce-4742-a316-b31c5f0ceb9f" name="CreateRow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a8dfb48b-426e-4d03-b627-6e3d51135514" />
+                </operation>
+                <operation Id="9f9f703e-f638-45ab-91fe-c18f2d75ff8c" name="CreateColumn" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="411c5092-6ddc-45fc-982c-205609aa1022" />
+                </operation>
+                <operation Id="621f1af4-15e5-40aa-a069-ac2e21076e65" name="CreatePage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3076a9db-8877-43d0-9952-8931ef980c09" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="ab99a238-f1e4-4ad3-b025-9c35e55833a6" name="ModelingProject">
+    <elementDefinition Id="a0dfa522-ed04-413b-aa6d-2bc1054c699e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9d87f6bb-5bf5-4d21-87d0-915fa1175e47">
+        <profileInstance Id="066064cd-539d-416c-8a58-69c5910938c8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c4286b8b-a3b2-45bf-9222-12f3c4db4f85">
+        <profileInstance Id="ee8e9012-f5d6-42ef-ae81-b2d3ed107256" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

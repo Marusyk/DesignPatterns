@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 13.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2013-10-20T16:25:09" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod' -  (Package)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Action' -  (Enumeration)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern' -  (Package)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::Document' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument' -  (Class)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::action' -  (Property)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::childForm' -  (Property)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::Clear' -  (Operation)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::Close' -  (Operation)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::fileName' -  (Property)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::inputText' -  (Property)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::interimText' -  (Property)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::Open' -  (Operation)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::openFile' -  (Property)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::SaveAs' -  (Operation)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::saveFile' -  (Property)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::TextDocument' -  (Operation)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::TextDocument::action' -  (Parameter)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::TextDocument::baseForm' -  (Parameter)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::Pattern::TextDocument::TextDocument::counter' -  (Parameter)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::FactoryMethod::TextDocForm' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Windows' -  (Package)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Windows::Forms' -  (Package)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Windows::Forms::Form' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Windows::Forms::OpenFileDialog' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Windows::Forms::RichTextBox' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Windows::Forms::SaveFileDialog' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::FactoryMethod::Pattern::TextDocument to ModelingProject1::FactoryMethod::Pattern::Document (Generalization)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::FactoryMethod::BaseForm to ModelingProject1::System::Windows::Forms::Form (Generalization)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::FactoryMethod::TextDocForm to ModelingProject1::System::Windows::Forms::Form (Generalization)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::FactoryMethod::PngDocForm to ModelingProject1::System::Windows::Forms::Form (Generalization)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::FactoryMethod::Pattern::PngDocument to ModelingProject1::FactoryMethod::Pattern::Document (Generalization)" />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="High" Text="(7) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2013-10-20T16:25:10" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

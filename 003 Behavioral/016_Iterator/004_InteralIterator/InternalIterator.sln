@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_InternalIterator", "001_InteralIterator\001_InternalIterator.csproj", "{ADEFEA58-9315-4870-A636-D396BD7409EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_InternalIterator", "002_InteralIterator\002_InternalIterator.csproj", "{7BD78AF3-E05E-44B7-B8E9-B690451CC309}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADEFEA58-9315-4870-A636-D396BD7409EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADEFEA58-9315-4870-A636-D396BD7409EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADEFEA58-9315-4870-A636-D396BD7409EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADEFEA58-9315-4870-A636-D396BD7409EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD78AF3-E05E-44B7-B8E9-B690451CC309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD78AF3-E05E-44B7-B8E9-B690451CC309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD78AF3-E05E-44B7-B8E9-B690451CC309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD78AF3-E05E-44B7-B8E9-B690451CC309}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

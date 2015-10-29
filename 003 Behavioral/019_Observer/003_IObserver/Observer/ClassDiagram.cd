@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Observer.ConcreteObserver" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="3.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAACAAAIAAAAAAAAAAAJEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pattern\Observer\ConcreteObserver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Observer.ConcreteSubject" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="3.25" Width="5.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Observer.ConcreteSubject.Unsubscriber">
+        <TypeIdentifier>
+          <NewMemberFileName>Pattern\Subject\ConcreteSubject.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAAAAAAAAAAAAAAAAACAABAAAAABAAAAAA=</HashCode>
+      <FileName>Pattern\Subject\ConcreteSubject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="System.IDisposable">
+    <Position X="8.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.IObservable&lt;T&gt;">
+    <Position X="2.5" Y="1.25" Width="3.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.IObserver&lt;T&gt;">
+    <Position X="8" Y="1.25" Width="2.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

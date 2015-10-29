@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8032086a-0d57-4bb7-b5ee-8d99ee4045fe" name="Compiler" linkedPackageId="a8308237-656b-475f-9050-8a9f7ca0175a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="4054b7ca-6ab6-4545-b63e-c2712a4a185e" name="Facade">
+        <ownedCommentsInternal>
+          <comment Id="9965068f-a7a3-400b-803d-dc1f29fb9d3e">
+            <elementDefinition Id="72ce8a3a-a92c-4a42-bd12-33f8f9910195" />
+            <body>Классы 
+подсистемы компиляции</body>
+          </comment>
+          <comment Id="234bf886-6320-44f5-9c2e-341659fac387">
+            <elementDefinition Id="6646c8b2-4890-4316-a88b-cdb5c9dd8c42" />
+            <body>Процессоры, начиная с Intel 486DX, являются CISC-процессорами с RISC-ядром. Они непосредственно перед исполнением преобразуют CISC-инструкции в набор инструкций RISC.</body>
+            <annotatedElements>
+              <classMoniker Id="9e550e49-8dcd-449b-988f-9291e0e1c291" LastKnownName="CISCCodeGenerator" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="8ab4a99b-9d29-4583-a4bf-cf175b14bb76" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="b2ce9a1d-044c-49a4-a963-1fb36b174362" name="Compiler" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a92deccf-13e7-4711-93d0-036b56dfd31c" />
+              <suppliersInternal>
+                <dependency Id="bf42740e-b1b4-4ea0-8ce7-d93dabd6b17d">
+                  <classMoniker Id="b641ad67-e2b6-4fd7-bc3d-eeda17a31ca7" LastKnownName="Scanner" />
+                  <elementDefinition Id="31f65390-8de2-48fd-aef4-2d34109d765f" />
+                </dependency>
+                <dependency Id="0a3e8900-2ee3-4646-80ef-bf7776fef601">
+                  <classMoniker Id="8fb18c6d-fa4d-483c-9e8c-24ad6c1b0e26" LastKnownName="Parser" />
+                  <elementDefinition Id="0ba20624-e49c-41ad-99c9-c3684e117aff" />
+                </dependency>
+                <dependency Id="1a509baa-f9cb-4b47-a8ba-88e7effab6d1">
+                  <classMoniker Id="c7ccfaf9-aa5d-49cd-9fe1-fbedd6257a64" LastKnownName="ProgramNodeBuilder" />
+                  <elementDefinition Id="0c130a7a-ceae-46df-9d78-fd2ebff8df83" />
+                </dependency>
+                <dependency Id="68267afe-88f7-46be-8bb8-d27be724d894">
+                  <classMoniker Id="b2ab5997-3410-4c7f-8167-93e11242506a" LastKnownName="CodeGenerator" />
+                  <elementDefinition Id="f6cc1a7a-1570-40a1-b91f-d08fd366d10f" />
+                </dependency>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b641ad67-e2b6-4fd7-bc3d-eeda17a31ca7" name="Scanner" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="28715fb4-085e-4a53-a00c-f9753d73afbc" />
+              <suppliersInternal>
+                <dependency Id="a22763e4-6c9e-4c26-afbb-d34baa8baaf9">
+                  <classMoniker Id="21e4cb4f-9268-4389-9652-6ac8d5f8bf94" LastKnownName="Token" />
+                  <elementDefinition Id="e9bfa3df-6d7f-463a-9ac4-3d5c3dbb29bd" />
+                </dependency>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8fb18c6d-fa4d-483c-9e8c-24ad6c1b0e26" name="Parser" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e6a64efe-9b63-4e7d-85fe-146d06dbd18c" />
+              <targetEnds>
+                <association Id="2bef261a-7f1c-4ff8-9dfe-9d7192d26a6c" isDerived="false" sourceEndRoleName="Director" targetEndRoleName="Builder" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="c7ccfaf9-aa5d-49cd-9fe1-fbedd6257a64" LastKnownName="ProgramNodeBuilder" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="5f660cbd-79ac-4261-b857-b208a89893d1" name="Director" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="ad8aa7a1-a1e5-4f52-a901-c8fb7e1dfd89" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="579f5450-4096-4e89-bec8-4a74e636faf8" name="Builder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="0edbe373-66eb-4654-bce6-e30e30e98950" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d864f7d7-db4a-488f-846d-51bca05d40a6" />
+                </association>
+                <association Id="206a2c33-16cb-4adf-a34c-782cffe4dc1d" isDerived="false" sourceEndRoleName="Parser" targetEndRoleName="Scanner" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="b641ad67-e2b6-4fd7-bc3d-eeda17a31ca7" LastKnownName="Scanner" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="38e78b6e-ebd4-4a7d-b786-fc6169c0eb97" name="Parser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="ce755a55-8334-4409-96dd-6942908a2912" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ebc79f48-e2a3-4331-b727-fc911d514ea7" name="Scanner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="8881b5c0-e8ca-49ae-9668-6dace6f2f0a4" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="da81a2df-e2af-4746-b9c3-97d4d2bfb75c" />
+                </association>
+                <association Id="1d8273ae-ec75-4129-bf01-ef50514dcdab" isDerived="false" sourceEndRoleName="Parser" targetEndRoleName="Token" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="21e4cb4f-9268-4389-9652-6ac8d5f8bf94" LastKnownName="Token" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2be6eef4-02f8-4a59-a1f3-49bfd6cbf804" name="Parser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="4ca1179a-62cf-4028-86fd-495a30a7bf13" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e5db61ab-9aee-4ca7-8bf1-520f99f22afc" name="Token" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="b41fd0a4-3ca2-41c9-8c1a-60d912c5cbc3" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="00923056-6b92-459e-a411-fae10ab7aedc" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="21e4cb4f-9268-4389-9652-6ac8d5f8bf94" name="Token" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2ce8a6a4-92df-48f9-a2dc-516e74f7f3ae" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c7ccfaf9-aa5d-49cd-9fe1-fbedd6257a64" name="ProgramNodeBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="06607855-819b-4dac-b43d-d520d5d743cb" />
+              <suppliersInternal>
+                <dependency Id="24716724-5e5a-4740-848c-869f4997979a">
+                  <classMoniker Id="2a4e288a-0649-41dc-8c4b-575a8ed3422a" LastKnownName="ProgramNode" />
+                  <elementDefinition Id="925018fb-dd20-4333-8d7e-f340d27ddf9b" />
+                </dependency>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2a4e288a-0649-41dc-8c4b-575a8ed3422a" name="ProgramNode" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9a0bdbdf-c4b3-4a9a-80d5-9440643c35fd" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d133cc77-3c2a-4331-b392-83822adf7159" name="StatementNode" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e404c78c-b6ac-4be4-8c16-54b04d992010" />
+              <generalsInternal>
+                <generalization Id="db5a574e-0447-4611-bbe4-fc5a108a646a" isSubstitutable="false">
+                  <classMoniker Id="2a4e288a-0649-41dc-8c4b-575a8ed3422a" LastKnownName="ProgramNode" />
+                  <elementDefinition Id="02f6c486-7f64-4fa0-ae3d-4ff8310e4397" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f7480e0d-eac0-4514-a698-e2f79c327c64" name="ExpressionNode" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b84c8aff-20bc-4f73-9f0f-3dc222e63d69" />
+              <generalsInternal>
+                <generalization Id="77b4eede-0df7-4e9f-8c16-7e2df493e3f5" isSubstitutable="false">
+                  <classMoniker Id="2a4e288a-0649-41dc-8c4b-575a8ed3422a" LastKnownName="ProgramNode" />
+                  <elementDefinition Id="fa06580f-613e-4b57-9f0c-8b724a16e30d" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="2953f204-88f4-4ff2-828b-3e2d4a22073c" isDerived="false" sourceEndRoleName="Composite" targetEndRoleName="Component" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="2a4e288a-0649-41dc-8c4b-575a8ed3422a" LastKnownName="ProgramNode" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="05c26899-79a1-4f70-add7-abf64a128ee4" name="Composite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="0f43df1e-69e0-421b-98de-0c1bd7249e0c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d026ecd7-6167-4674-8354-ca248d075eb5" name="Component" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="7f8a62cf-7e9f-4593-944e-ac7704b1b1a8" name="Lower" value="*">
+                            <elementDefinition Id="89aa2e3a-24a6-43fe-9fd3-5bdb755890b8" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="48baa828-8555-4d8e-9649-660b3c29db89" name="Upper" value="*">
+                            <elementDefinition Id="7bbbf401-8a62-4c0b-b8bd-8131157e58bc" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="6e169f1c-5736-407b-a330-e7e9e82c4715" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="46f6cc67-7d48-4de2-bd3a-30d75a4dced3" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b413dc5d-fe0b-4817-a2eb-e31597e15702" name="VariableNode" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c4e8572e-2dae-4af0-83a1-146e25a1c4da" />
+              <generalsInternal>
+                <generalization Id="0588ff4b-e32e-4360-9912-b73f6f67d945" isSubstitutable="false">
+                  <classMoniker Id="2a4e288a-0649-41dc-8c4b-575a8ed3422a" LastKnownName="ProgramNode" />
+                  <elementDefinition Id="b600db0f-63ce-428b-959b-79388692f85c" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ef9df470-8563-4879-9954-759146a32c5c" name="ByteCodeStream" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4f90013e-1429-4f5d-baba-823686d7d008" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b2ab5997-3410-4c7f-8167-93e11242506a" name="CodeGenerator" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9c1ecc03-8581-4291-9e86-6675203e8a23" />
+              <suppliersInternal>
+                <dependency Id="eda793fa-fea2-437e-b4d4-8b53fdf6274e">
+                  <classMoniker Id="2a4e288a-0649-41dc-8c4b-575a8ed3422a" LastKnownName="ProgramNode" />
+                  <elementDefinition Id="5fd505c9-a510-4642-9a2f-8e444987696a" />
+                </dependency>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="35d35284-2f4c-4599-a702-e168b6ba134d" isDerived="false" sourceEndRoleName="CodeGenerator" targetEndRoleName="ByteCodeStream" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="ef9df470-8563-4879-9954-759146a32c5c" LastKnownName="ByteCodeStream" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d275a3e3-d325-4a43-8074-7d6610fdb85d" name="CodeGenerator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="5bce051c-9fc9-41f7-bf86-67502a228071" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="cdef75d3-1934-4362-a219-5b31b2058644" name="ByteCodeStream" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="b1ae2548-14fd-4478-b473-43bf3fb2f0b8" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="6c4c69e9-9dbd-4781-9aa8-e45efe297fe9" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9e550e49-8dcd-449b-988f-9291e0e1c291" name="CISCCodeGenerator" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="629ed854-0ea2-40cb-8a2c-07b395c2ec7a" />
+              <generalsInternal>
+                <generalization Id="9b78b93a-14f2-49bc-b836-adc5c53b3162" isSubstitutable="false">
+                  <classMoniker Id="b2ab5997-3410-4c7f-8167-93e11242506a" LastKnownName="CodeGenerator" />
+                  <elementDefinition Id="f20f752b-a958-4c8c-b0ea-61f264ca14b4" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="43dbf662-a72a-4429-968a-eb3d03365625" name="ByteCode" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6569e2a9-46c2-4d20-a498-3b4a4ab37368" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="a8308237-656b-475f-9050-8a9f7ca0175a" name="ModelingProject">
+    <elementDefinition Id="4e302637-cf90-403b-ad57-82a4972255ec" />
+    <profileInstances>
+      <packageHasProfileInstances Id="48faaa58-fe56-45d1-b62e-59ed06a9dc88">
+        <profileInstance Id="c9799f20-2732-4044-bc96-57bd6546b22c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3c0234ce-0fd3-47ab-9048-f02d6c9419dd">
+        <profileInstance Id="d3b7ef48-4fb8-4c5c-849c-2ffc468c4943" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

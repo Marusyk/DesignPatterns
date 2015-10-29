@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WidgetFactoryApplication.Window" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAgAAAAAAAAAAAAAIAAEAAAAAAAA=</HashCode>
+      <FileName>Abstraction_Bridge\AbstractionWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.WindowsOSWindow">
+    <Position X="4.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Abstraction_Bridge\WindowsOSWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.AbstractButton" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buttons_Products\AbstractButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.LeopardButton" Collapsed="true">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buttons_Products\LeopardButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.WindowsButton" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buttons_Products\WindowsButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.AbstractImplementor" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\AbstractWidgetFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.LeopardOSImplementor" Collapsed="true">
+    <Position X="8.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\LeopardOSImplementor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.WindowsOSImplementor" Collapsed="true">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\WindowsOSImplementor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.Program" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.AbstractForm" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows_Products\AbstractForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.LeopardForm" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows_Products\LeopardForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.WindowsForm" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows_Products\WindowsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetFactoryApplication.LeopardOSWindow">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Abstraction_Bridge\LeopardOSWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a99151db-0395-4900-bb21-e35206300444"
+  name="System.Collections" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="12fccd88-2805-4c64-8a27-6b2b5774d105"
+        name="Hashtable"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2ccdfb92-fc1f-4e89-a525-fe87c0d8fa6a">
+            <interfaceMoniker
+              Id="5fe9f55d-add4-4100-90aa-66c0a53e5f5f"
+              LastKnownName="IDictionary"
+              LastKnownLocation="Package_1534.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="5fe9f55d-add4-4100-90aa-66c0a53e5f5f"
+        name="IDictionary"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e07c9259-f9a3-4c71-9bd1-c0b69afe7c20"
+        LastKnownName="Specialized"
+        LastKnownLocation="Package_1535.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

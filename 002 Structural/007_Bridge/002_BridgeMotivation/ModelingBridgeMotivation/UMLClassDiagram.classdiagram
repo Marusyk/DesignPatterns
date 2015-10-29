@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="87dab12f-27ef-4265-9058-3ac8e9ad01ad" name="UMLClassDiagram" linkedPackageId="f5c659ce-aa7c-4e85-ab73-7403c05e43e7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="7d1aefa7-0c40-4bcc-96b4-82c54eb64eb7" name="BridgeWindow">
+        <elementDefinition Id="727e7210-285d-468b-9559-43afe81f8236" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="9ed67951-e42b-42c2-910a-cf7c4147becd" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9a98c710-5928-4850-ad41-dae3a1dbf619" />
+              <targetEnds>
+                <association Id="628ffb86-0866-48c2-8a22-7141365e91bf" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Window" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="80411521-d593-4913-aed8-8b879d4bd994" LastKnownName="Window" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6bf52b14-333e-47ab-9ade-401e69c8d105" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="de23a166-fe9c-4b0a-bc5a-2e64b34af39f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="496cee78-34d4-45ce-9b61-c9641880bc5c" name="Window" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="92672364-6dc3-481f-9f36-bdb43a975461" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="f6300c8c-f3a8-4dff-bbf7-13e3e3eb9bbd" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="73aacd0e-b2ed-4d5e-84ef-968aec38418f" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9099f503-c39f-4dd1-ad13-11b019e77b1b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5d48c1da-e232-4ced-bee9-5c938c1e6afd" direction="Return" isUnique="false">
+                        <elementDefinition Id="3a00a6bd-2c73-4021-b0e7-d09a8f66f22e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="516ce318-f08a-4397-92bb-4b41b052e175" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="80411521-d593-4913-aed8-8b879d4bd994" name="Window" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d4fd7f05-b4bb-4daf-9a04-3d709e9db26e" />
+              <targetEnds>
+                <association Id="a4b98b55-8757-461b-aff9-e936a385cda2" isDerived="false" sourceEndRoleName="Window" targetEndRoleName="WindowImp" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="14d067cd-3105-4a99-9fdc-1ef6c2bd7327" LastKnownName="WindowImp" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="776b0acd-0590-410e-8809-b8ce96b7805c" name="Window" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="0e922cf6-0503-424a-8eff-1f9abf1a11e7" name="Lower" value="*">
+                            <elementDefinition Id="a94c376f-edab-4539-b038-b977fb8afe57" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="70cd60bb-e8f6-4ac7-b3fe-90bd769630f3" name="Upper" value="*">
+                            <elementDefinition Id="fb66f781-0b40-4101-a3ae-a47ed7f1aa41" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="61313f80-3036-47ce-b550-2ebf9a2fb663" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="aa5fb6d2-3a51-44f1-b36f-e05e7641e202" name="WindowImp" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="6c4effa5-8411-460d-954c-9128a65d0376" name="Lower" value="*">
+                            <elementDefinition Id="25a6b63a-c4c8-49a9-8894-bef77dc4f3cd" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="7e70a33f-6629-467d-88e6-89155ba1bc42" name="Upper" value="*">
+                            <elementDefinition Id="051c4260-4c56-4ba3-a621-2e7a79076024" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="c3abe1ca-80e9-4e81-9ce9-7f89b417f0d9" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="2473714d-ca11-4f78-a48e-210691121c07" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="d9946515-d865-4d59-9f0b-1bf3fce84faa" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7933f9ea-61e5-479a-89ec-a88447b51214" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="14d067cd-3105-4a99-9fdc-1ef6c2bd7327" name="WindowImp" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bbee5357-991b-403c-8b9f-a74ef4105be1" />
+              <ownedOperationsInternal>
+                <operation Id="857a9d60-2ad2-4118-a260-81de3889fb66" name="DevDrawButton" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e5922aa5-5f84-4a9a-a695-613875731512" />
+                </operation>
+                <operation Id="fb1cff29-f4c3-4598-925b-7ddfaedd9a2e" name="DevDrawForm" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c4e58318-394b-461a-a285-ad10953a30b8" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f2d43d1d-be93-429b-9c4f-c941e6a00d13" name="MSWindowImp" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="3bafc1ee-abd8-4cf2-bcbf-2256eadf749c" />
+              <generalsInternal>
+                <generalization Id="5d3cfb6b-ebb4-4028-a276-feb0be12ef59" isSubstitutable="false">
+                  <classMoniker Id="14d067cd-3105-4a99-9fdc-1ef6c2bd7327" LastKnownName="WindowImp" />
+                  <elementDefinition Id="891c2e59-bc3c-4ac8-b4d7-72c36e2f3607" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="38ae7fc3-da85-4eea-b717-b7cecfe416f2" name="DevDrawButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8bc1694e-e3a2-4492-b084-a4cb91a59f5d" />
+                </operation>
+                <operation Id="38fe76c3-9038-4452-a047-13f78b45a587" name="DevDrawForm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="882629d3-f223-4cd1-ac2a-3505e971d262" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="128c889c-2e16-45f3-9d9a-4ea1f353d455" name="MacWindowImp" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="68ea2b0a-a5b3-4050-bf5f-654b12dafde2" />
+              <generalsInternal>
+                <generalization Id="09242992-3544-433b-904e-68e357d96f64" isSubstitutable="false">
+                  <classMoniker Id="14d067cd-3105-4a99-9fdc-1ef6c2bd7327" LastKnownName="WindowImp" />
+                  <elementDefinition Id="712b6526-caea-4b3a-9a06-f1e717b71a30" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="87d3187a-f792-4f83-9e0a-c7aa0b8f80cf" name="DevDrawButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5eb78a62-dceb-49c1-bb57-1bdcf1add4ec" />
+                </operation>
+                <operation Id="1a7d8faa-76b8-454b-88fd-a3bf584998e2" name="DevDrawForm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9db68e78-eb39-4e11-a336-993a9fdab7bb" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1a0dcf1e-e0cc-4e14-b8ec-3c68c5a3ea83" name="MSWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b81268cc-18a1-4a74-8365-1f70e9a5759c" />
+              <generalsInternal>
+                <generalization Id="8c0d6b1a-6434-405b-977e-e3ab8d86ec4b" isSubstitutable="false">
+                  <classMoniker Id="80411521-d593-4913-aed8-8b879d4bd994" LastKnownName="Window" />
+                  <elementDefinition Id="99d77bf7-e8af-4e78-abdc-66b5ddcc16f3" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e295c4a4-b3d2-499e-bed4-d2f361745d1a" name="MacWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f9c8216f-0f4d-4d7d-82a1-c8b5d7fc1a8e" />
+              <generalsInternal>
+                <generalization Id="f7f969e9-6077-4936-82ba-ec08f9a3aa53" isSubstitutable="false">
+                  <classMoniker Id="80411521-d593-4913-aed8-8b879d4bd994" LastKnownName="Window" />
+                  <elementDefinition Id="43570b7e-7643-4229-b6d1-d511d5675fee" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="516ce318-f08a-4397-92bb-4b41b052e175" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="85daa735-4b58-45a2-a3dc-c13eb43b8468" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="f5c659ce-aa7c-4e85-ab73-7403c05e43e7" name="ModelingWidgetFactory">
+    <elementDefinition Id="37e973f4-3744-4dd2-ba50-282c1b3edd51" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0741579d-c082-48fb-b9bb-354d209b576d">
+        <profileInstance Id="ce8f44ce-4a71-44a9-a98a-73fa60f5e0c2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="bb3c08e9-dc51-47aa-915a-dc8325f48710">
+        <profileInstance Id="421334f7-9397-4a9e-b324-d7e7ec436d7e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

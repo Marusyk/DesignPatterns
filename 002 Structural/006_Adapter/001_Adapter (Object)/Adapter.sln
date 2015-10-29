@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{61D8C336-EC7A-458A-801A-C7148570E487}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingAdapter", "ModelingAdapter\ModelingAdapter.modelproj", "{CDE3AF79-7ADD-4412-81AF-630202BDE55B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61D8C336-EC7A-458A-801A-C7148570E487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D8C336-EC7A-458A-801A-C7148570E487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D8C336-EC7A-458A-801A-C7148570E487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D8C336-EC7A-458A-801A-C7148570E487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE3AF79-7ADD-4412-81AF-630202BDE55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE3AF79-7ADD-4412-81AF-630202BDE55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE3AF79-7ADD-4412-81AF-630202BDE55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE3AF79-7ADD-4412-81AF-630202BDE55B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

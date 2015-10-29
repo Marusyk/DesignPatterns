@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{3C473B9A-E389-42DA-868E-CC6328566C21}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject", "ModelingProject\ModelingProject.modelproj", "{748509EE-5D03-4A0F-8854-DDD4CB95212D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C473B9A-E389-42DA-868E-CC6328566C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C473B9A-E389-42DA-868E-CC6328566C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C473B9A-E389-42DA-868E-CC6328566C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C473B9A-E389-42DA-868E-CC6328566C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748509EE-5D03-4A0F-8854-DDD4CB95212D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748509EE-5D03-4A0F-8854-DDD4CB95212D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748509EE-5D03-4A0F-8854-DDD4CB95212D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748509EE-5D03-4A0F-8854-DDD4CB95212D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

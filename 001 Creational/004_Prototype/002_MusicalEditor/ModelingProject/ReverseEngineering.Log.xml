@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 13.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2013-11-24T18:31:38" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MusicNotes' -  (Package)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject::MusicNotes::Tool' -  (Class)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MusicNotes::Tool::form' -  (Property)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MusicNotes::Tool::Manipulate' -  (Operation)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MusicNotes::Tool::scoreSheetPanel' -  (Property)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MusicNotes::Tool::Tool' -  (Operation)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MusicNotes::Tool::Tool::panel' -  (Parameter)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System' -  (Package)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Windows' -  (Package)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Windows::Forms' -  (Package)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Windows::Forms::Form' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Windows::Forms::Panel' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::MusicNotes::GraphicTool to ModelingProject::MusicNotes::Tool (Generalization)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::MusicNotes::RelocationTool to ModelingProject::MusicNotes::Tool (Generalization)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::MusicNotes::RotateTool to ModelingProject::MusicNotes::Tool (Generalization)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::MusicNotes::Form1 to ModelingProject::System::Windows::Forms::Form (Generalization)" />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="High" Text="(2) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2013-11-24T18:31:39" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

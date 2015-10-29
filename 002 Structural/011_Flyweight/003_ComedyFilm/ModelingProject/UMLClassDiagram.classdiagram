@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f2e07ecb-142b-4001-a8bd-b473d0545889" name="UMLClassDiagram" linkedPackageId="5c0ff0eb-91fc-42ed-b600-71df2e82a086" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="aba56d4d-1813-4016-9409-558ef3cb85d0">
+      <profileInstance Id="78e195b4-2264-45bd-b4c0-20837b0769fd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c625fbb4-bc9b-4818-9e7e-63a2b3252745">
+      <profileInstance Id="240152ca-453a-440a-b6a4-d7a4416c4571" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="951727dd-57d8-49a0-a070-64a9e7785ab6" name="ComedyFilm">
+        <ownedCommentsInternal>
+          <comment Id="fc937c66-15c6-4831-ace9-dd8b2656be58">
+            <elementDefinition Id="8cfab913-ecca-4917-bfbf-7f2ae3844384" />
+            <body>Разделяемый</body>
+            <annotatedElements>
+              <classMoniker Id="df9f2f58-a71a-4b94-aa4b-e542421af218" LastKnownName="ActorMikeMyers" />
+            </annotatedElements>
+          </comment>
+          <comment Id="8bc3f94f-d3d2-4048-8a58-137503c68f95">
+            <elementDefinition Id="226c5a8d-fc65-4575-b14e-be22bb9f4657" />
+            <body>Неразделяемые</body>
+            <annotatedElements>
+              <classMoniker Id="f6b7942d-10df-4c6d-88bc-6642133aa321" LastKnownName="RoleAustinPowers" />
+              <classMoniker Id="928e96a6-9da0-4057-8a40-359dbc198c5c" LastKnownName="RoleDoctorEvil" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="32fe49c2-bf4f-4ab3-848e-1ee39dcbe915" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="956faeaa-9621-4cb5-9855-8e3a67fad8b8" name="Flyweight" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="629e0abd-9fc8-4f45-a2a9-b5e3da033989" />
+              <ownedOperationsInternal>
+                <operation Id="c44fd219-0245-4d17-a9cd-ab553ebf8c72" name="Greeting" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0c28f442-8ac7-4d15-b6f8-3a95f74316d8" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ec406489-ad34-40ba-b3b6-a5e76323d490" name="string speech" direction="In" isUnique="false">
+                        <elementDefinition Id="63e0ae59-663c-44c1-a831-71e5776b06d9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="77fa5a4c-0936-4e1d-a670-8498cda44c8b" direction="Return" isUnique="false">
+                        <elementDefinition Id="bfccb85d-1a5e-4815-ac24-07e88478ae0c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="eda3c7b8-e489-437c-9c61-16b006c4d61c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="df9f2f58-a71a-4b94-aa4b-e542421af218" name="ActorMikeMyers" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c09bb004-ba36-4fd1-ba93-9f54f9bc595a" />
+              <generalsInternal>
+                <generalization Id="58f281d6-cdd0-4d6a-a40e-7672ebd3799f" isSubstitutable="false">
+                  <classMoniker Id="956faeaa-9621-4cb5-9855-8e3a67fad8b8" LastKnownName="Flyweight" />
+                  <elementDefinition Id="67a7feb9-c531-455f-8da8-5bd9751feb45" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="8cf12e74-6862-48a9-a446-0efbfa834dee" name="Greeting" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f998bf84-2481-4a00-8951-d71dd96d37ac" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9c579c5f-08e1-409d-bd6b-6fc1205add5e" name="string speech" direction="In" isUnique="false">
+                        <elementDefinition Id="4661c2f3-8260-40b6-9f02-139b664ec82a" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b965e261-30cf-4942-96b4-aeb500073e38" direction="Return" isUnique="false">
+                        <elementDefinition Id="c323da76-7321-42f0-92d8-7409d6da4108" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="eda3c7b8-e489-437c-9c61-16b006c4d61c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f6b7942d-10df-4c6d-88bc-6642133aa321" name="RoleAustinPowers" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ad33200a-fb38-4fac-9a4c-2ae1493d4426" />
+              <suppliersInternal>
+                <dependency Id="1a046939-248c-4a9b-88f4-244f8fe2b948">
+                  <classMoniker Id="df9f2f58-a71a-4b94-aa4b-e542421af218" LastKnownName="ActorMikeMyers" />
+                  <elementDefinition Id="b6eaffcd-11ae-4dfc-a9c6-e476faa37833" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="69674a51-6c2a-4fff-af93-8dc05eb85f02" isSubstitutable="false">
+                  <classMoniker Id="956faeaa-9621-4cb5-9855-8e3a67fad8b8" LastKnownName="Flyweight" />
+                  <elementDefinition Id="2d5cefa1-71ae-4f01-b764-1389d9c7e154" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="e7012b86-eab5-4c58-98dd-7cfb20642f29" name="flyweight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="77620861-281c-42f7-987a-3789b930a167" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="63fdeabb-ad68-4113-a457-1a004c2ec8f1" LastKnownName="Flyweight" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="3932f40c-e198-4782-9682-60312a3b6a3f" name="Greeting" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c9ad4a1a-0141-4dd4-a5fc-bdcc2a80a7ba" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e75eda34-40cb-44ca-a605-c6b2bb6aea65" name="string speech" direction="In" isUnique="false">
+                        <elementDefinition Id="22a425b2-5888-4662-a052-dbea2bfe7cb3" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ee90c209-60e1-45f2-ab45-783543e68903" direction="Return" isUnique="false">
+                        <elementDefinition Id="19d40bf0-5fe8-491d-bbe4-7ceb9aa28197" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="eda3c7b8-e489-437c-9c61-16b006c4d61c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="928e96a6-9da0-4057-8a40-359dbc198c5c" name="RoleDoctorEvil" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a849a27b-3e15-40ed-bbd6-69afc990b134" />
+              <suppliersInternal>
+                <dependency Id="8aeb5e34-1d80-4fe6-9fb6-ff949361267b">
+                  <classMoniker Id="df9f2f58-a71a-4b94-aa4b-e542421af218" LastKnownName="ActorMikeMyers" />
+                  <elementDefinition Id="dda35ec4-003c-487d-89b4-420007fc029f" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="3151d61f-c4fa-421b-a9f2-5672867837b1" isSubstitutable="false">
+                  <classMoniker Id="956faeaa-9621-4cb5-9855-8e3a67fad8b8" LastKnownName="Flyweight" />
+                  <elementDefinition Id="970d72c1-ac6e-4db4-a3d9-2facf3274dba" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="8b69bd39-63d7-4453-bb35-91df930f0590" name="flyweight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6ac16a29-db9a-4b33-8805-0c6739a0ae10" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="eede86fb-63e7-4b49-83f7-b10f0b10893d" LastKnownName="Flyweight" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="ec2054c1-6794-44e4-8bdf-71839e9fa75c" name="Greeting" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2f490e48-8f34-4fdc-88ad-294e27e4015e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8e3505ad-20b8-4aa9-8298-2416e0d33a1e" name="string speech" direction="In" isUnique="false">
+                        <elementDefinition Id="05f37c9b-7095-4fa0-b110-f0a67e5e37a5" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a4e4964a-991f-4f54-b677-395ea528d9b2" direction="Return" isUnique="false">
+                        <elementDefinition Id="8be8a7a6-4115-46e0-8424-08a7f30ae6f0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="eda3c7b8-e489-437c-9c61-16b006c4d61c" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="eda3c7b8-e489-437c-9c61-16b006c4d61c" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="6f550d8f-58f9-4d59-9ad4-a5dd654cc091" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="eede86fb-63e7-4b49-83f7-b10f0b10893d" name="Flyweight" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::ComedyFilm::Flyweight">
+        <elementDefinition Id="629e0abd-9fc8-4f45-a2a9-b5e3da033989" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="63fdeabb-ad68-4113-a457-1a004c2ec8f1" name="Flyweight" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::ComedyFilm::Flyweight">
+        <elementDefinition Id="629e0abd-9fc8-4f45-a2a9-b5e3da033989" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="5c0ff0eb-91fc-42ed-b600-71df2e82a086" name="ModelingProject">
+    <elementDefinition Id="3048a5fc-c5fc-476c-9f98-ae19e7048549" />
+  </package>
+</logicalClassDesignerModel>

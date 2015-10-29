@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="15aa9b25-49ae-4545-a965-f511affa28a2" name="UMLClassDiagram" linkedPackageId="3334ba36-c6a6-49b6-bbe4-790088bff2e1" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e014d3ce-3c92-48ba-8f95-ebb3c1d2ae96">
+      <profileInstance Id="11f4c85b-b87c-4607-9a4b-be9649f2b29c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ba841d95-c6b1-45f7-8038-93a500e4634b">
+      <profileInstance Id="a8171128-ce5a-43f6-a868-7bcbaaf24bc6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="a90c6276-7e4d-4772-a8ba-ee4c05e25180" name="TextViewDecorator">
+        <elementDefinition Id="eae79fed-ba6a-4d0c-bc3f-99a042a42f85" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="ac9c0156-b5e2-4787-8807-69b776708f25" name="TextView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e80d0030-7ecf-4612-a0a5-e22413826769" />
+              <generalsInternal>
+                <generalization Id="0d41be68-fafb-41fb-9612-41aab1ca4b76" isSubstitutable="false">
+                  <classMoniker Id="38dc066a-0058-4f77-b9ed-91559dcb3c12" LastKnownName="VisualComponent" />
+                  <elementDefinition Id="50b6d7ef-3be4-48e3-ac41-967ea6d4c7f9" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="028c23a7-941f-4931-a215-07b80ad0760b" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="17c2484f-21c7-46c6-b5f1-c9ecfdec5ac6" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6028b832-ef58-4dc3-822e-040027cd83b9" name="Decorator" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6bfc86ba-4f2e-41c3-b26c-7e8ea959c9cc" />
+              <generalsInternal>
+                <generalization Id="f1be2679-0eb3-434a-a9e1-b7c5c317a468" isSubstitutable="false">
+                  <classMoniker Id="38dc066a-0058-4f77-b9ed-91559dcb3c12" LastKnownName="VisualComponent" />
+                  <elementDefinition Id="5a5c1173-5801-40c4-80e3-61380d0add52" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="9b5cdd57-d9ac-4464-a2ae-c98ad2404376" isDerived="false" sourceEndRoleName="Decorator" targetEndRoleName="VisualComponent" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="38dc066a-0058-4f77-b9ed-91559dcb3c12" LastKnownName="VisualComponent" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b0eca5d3-d6e7-4fff-b24f-ff2f02ebc441" name="Decorator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="c0cfd8c0-20f6-4702-95aa-42422473e6da" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e2a90816-c38d-421a-ac8f-208727390009" name="VisualComponent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="abe59756-f3de-4847-9aa0-1c80022d2bd1" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="3b480b47-d079-4b89-a406-04ff0bfa11cd" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="b453cca9-7eca-4d79-8bdd-4fff88435147" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="79943da6-ae30-442f-99e1-6413b0c5a9a8" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="441d5a9c-9c1d-4cbf-8e6e-737330c77b5c" name="ScrollDecorator" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c3df161e-42c0-4392-a342-88da552d9653" />
+              <generalsInternal>
+                <generalization Id="f15928d7-1d98-43a5-bd58-1f5b726c2f08" isSubstitutable="false">
+                  <classMoniker Id="6028b832-ef58-4dc3-822e-040027cd83b9" LastKnownName="Decorator" />
+                  <elementDefinition Id="d55cf699-47f4-44dc-afbc-36ad806fb07b" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="5ca6cdd8-0ef0-49c1-8acb-53696fca2cf7" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2fd5b453-61c8-48b3-a6b8-02a07234759d" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="17366408-acbf-4f22-9e74-f525c6d838df" name="BorderDecorator" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ff9bc76c-a04d-43a2-8c96-97358068102d" />
+              <generalsInternal>
+                <generalization Id="7ee7c682-b3e5-429f-a103-ecb07d272f0e" isSubstitutable="false">
+                  <classMoniker Id="6028b832-ef58-4dc3-822e-040027cd83b9" LastKnownName="Decorator" />
+                  <elementDefinition Id="eeac0aff-eaa9-433c-85ec-c807fbd475fa" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="3156adad-b509-43ec-90e7-7a1292fea480" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8f0020b1-9fee-40c2-9950-ce8ae374b12b" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="38dc066a-0058-4f77-b9ed-91559dcb3c12" name="VisualComponent" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1d7dd73d-15c3-49c6-987e-d0a7cba04d9b" />
+              <ownedOperationsInternal>
+                <operation Id="6896439a-62a8-445f-a9c1-c98868ddd34b" name="Draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6405483c-5cb0-4789-8b90-23e525fb9779" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="3334ba36-c6a6-49b6-bbe4-790088bff2e1" name="ModelingProject">
+    <elementDefinition Id="d9d150be-f11f-4349-a962-1052ce187361" />
+  </package>
+</logicalClassDesignerModel>

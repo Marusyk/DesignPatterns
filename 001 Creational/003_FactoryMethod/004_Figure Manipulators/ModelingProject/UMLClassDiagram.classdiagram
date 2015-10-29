@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e275a695-a322-477e-ba48-7befc21dbc86" name="UMLClassDiagram" linkedPackageId="ead55b50-9f9b-485f-ae19-353afd709116" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f3c1ccc7-47e2-4a6d-9b96-e8ab3ef0a531">
+      <profileInstance Id="9a190d39-e0c0-4dad-9176-b2d17a7d3dfc" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e8a35fee-b18a-4511-9c39-794cb48162b7">
+      <profileInstance Id="9ab92cf4-611e-4771-a618-f8b96dba9665" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ed96a7d8-33ab-4a25-8124-920aee472859" name="FiguresAndManipulators">
+        <ownedCommentsInternal>
+          <comment Id="39ca01bd-ccef-4e34-9f1f-86eb16514b6a">
+            <elementDefinition Id="7349767a-de85-4695-989e-7e91cbeb3667" />
+            <body>Creator</body>
+            <annotatedElements>
+              <classMoniker Id="a38d17bf-af3c-4241-86a2-0c7ac6bfd1ce" LastKnownName="Figure" />
+            </annotatedElements>
+          </comment>
+          <comment Id="286de74c-7ead-4f6d-a296-1c47034c3851">
+            <elementDefinition Id="91585a22-0bbc-4d62-b96c-abb536058804" />
+            <body>Product</body>
+            <annotatedElements>
+              <classMoniker Id="0c6c66c9-92b8-47d7-abfe-39716ff1ba92" LastKnownName="Manipulator" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="14645349-a1c4-42e3-a4a8-b4ef57f7a1b1" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="a38d17bf-af3c-4241-86a2-0c7ac6bfd1ce" name="Figure" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ccc5a139-806e-4f8f-a9e1-70650b212f7d" />
+              <ownedOperationsInternal>
+                <operation Id="a75ea54c-9cc0-4fff-a3a8-fd2ad2a91cb0" name="CreateManipulator" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="95b57f4b-15b1-47d4-89bf-fc800617e753" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="65d93493-6a3d-42e9-a7d1-116e7ade84c6" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bbeddffb-310f-4025-8e3f-9f6f06441f83" />
+              <targetEnds>
+                <association Id="72e39d72-c6c2-4c50-926a-0123a72a4dd0" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Figure" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="a38d17bf-af3c-4241-86a2-0c7ac6bfd1ce" LastKnownName="Figure" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="75bdc59f-8bc5-442c-84d3-78c5d9c250d0" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="0ffb5392-4e85-4d22-b9d7-199892a8bec3" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a4d42a11-a104-49cc-9d7e-4eab27979da1" name="Figure" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="09056523-8f92-4a75-986c-83c06a601f47" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="71b3127d-2d91-409c-a90e-80421d8ab922" />
+                </association>
+                <association Id="2cc9ee33-d975-4991-a4e7-02d1f70549be" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Manipulator" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="0c6c66c9-92b8-47d7-abfe-39716ff1ba92" LastKnownName="Manipulator" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="753725d9-a9fa-4afb-9fd4-0d9c8c0fc727" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="8a612ae7-277a-477d-8521-a85e71b2ba69" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ab8321fa-9a09-42f7-bb82-7dd723fc86ea" name="Manipulator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="b6594748-b511-4ec4-bbc9-22964844fcb2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="2960e219-29ab-4d8c-914d-2fe9a67f6dc4" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0c6c66c9-92b8-47d7-abfe-39716ff1ba92" name="Manipulator" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cb36c32f-0365-4275-be04-8641c54ac1ad" />
+              <ownedOperationsInternal>
+                <operation Id="29d2336f-45f9-4f64-b229-2eaa3dd964ea" name="DownClick" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d8603333-71db-42ce-929c-4293057007d2" />
+                </operation>
+                <operation Id="d52f67e2-79c6-48c5-ba94-cf9f5ecc6fd9" name="Drag" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f16b2d38-ccc6-4f64-bace-c6f761a0902c" />
+                </operation>
+                <operation Id="af939fdb-d6d3-4308-9939-8b6a7b92412f" name="UpClick" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8d250c54-e3af-4ffc-8f1d-375d262ee668" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="199080a3-f70e-488e-82de-9f94ba2f6115" name="TextFigure" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="35071488-8454-47ce-b757-3935e914cba1" />
+              <suppliersInternal>
+                <dependency Id="86370772-e035-4846-97d9-0193dd13dba1">
+                  <classMoniker Id="df0769f5-0da8-483a-8a77-0cf815f3c2f0" LastKnownName="TextManipulator" />
+                  <elementDefinition Id="f0d1510b-4d2a-4b90-ae4b-006d013d720d" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="58d9db9b-c74b-46a6-a3bb-cab99354d91e" isSubstitutable="false">
+                  <classMoniker Id="a38d17bf-af3c-4241-86a2-0c7ac6bfd1ce" LastKnownName="Figure" />
+                  <elementDefinition Id="01671f84-f147-48e0-a233-3e5881bf5456" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="763117e2-e76f-41b4-8938-4f333b84aa23" name="CreateManipulator" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="83c23c57-7372-4a76-a72a-ccc5904bc63d" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6e71075a-cd7b-46ee-b438-3e7cd6c0c6af" name="LineManipulator" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="938ed9bc-3a4d-4cb2-aadf-892559c12df3" />
+              <generalsInternal>
+                <generalization Id="22d739b4-ec2a-47e6-bf99-30ffbb5fb79e" isSubstitutable="false">
+                  <classMoniker Id="0c6c66c9-92b8-47d7-abfe-39716ff1ba92" LastKnownName="Manipulator" />
+                  <elementDefinition Id="5e17be99-4e96-4e57-ab6c-060f43c3358b" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="1ed19db0-ae1b-497d-b142-795407e8f292" name="DownClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a6965037-67bd-4884-89d5-aabcfb0ef82c" />
+                </operation>
+                <operation Id="6b6eabd5-5090-4244-8acb-fea45c1f7e1e" name="Drag" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1ecfe266-86ca-4ebc-a143-c6c6909355bf" />
+                </operation>
+                <operation Id="08b3b1a8-35a7-431f-8927-b54d377262d4" name="UpClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1b6c4ff6-0a91-4bb0-a84f-f2142b81da94" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="df0769f5-0da8-483a-8a77-0cf815f3c2f0" name="TextManipulator" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8b331744-b96e-448d-9b1c-cec615d7ac9d" />
+              <generalsInternal>
+                <generalization Id="f96d5030-b433-468f-ba46-8ce098d50cf3" isSubstitutable="false">
+                  <classMoniker Id="0c6c66c9-92b8-47d7-abfe-39716ff1ba92" LastKnownName="Manipulator" />
+                  <elementDefinition Id="0ecc34fa-f12b-4386-b276-6d29b4b6e3c0" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="42bd7a47-c3bd-4218-ad23-4f73e7586ab7" name="DownClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1f271900-9962-4979-834b-2c3704570423" />
+                </operation>
+                <operation Id="21ee634e-9c78-4199-944f-355a81f73223" name="Drag" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ad1ecc46-a27e-4424-833e-a3730e016fa8" />
+                </operation>
+                <operation Id="50177df7-0637-48b7-98bd-a09a64ab6548" name="UpClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="91b4efdc-b116-418d-9fcd-bf81155cfda4" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1b8fa301-6f48-4935-bc3e-040556260b10" name="LineFigure" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="3a0777db-1a6d-4dfc-baa2-094ebe994d0a" />
+              <suppliersInternal>
+                <dependency Id="6b25dd21-76cb-4771-8e6d-3442e1812441">
+                  <classMoniker Id="6e71075a-cd7b-46ee-b438-3e7cd6c0c6af" LastKnownName="LineManipulator" />
+                  <elementDefinition Id="cbbc1909-2c8c-4f8f-8246-bdd971d70bfa" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="1ee0391c-acf3-417f-8777-4414ecc3509d" isSubstitutable="false">
+                  <classMoniker Id="a38d17bf-af3c-4241-86a2-0c7ac6bfd1ce" LastKnownName="Figure" />
+                  <elementDefinition Id="eecfa0b4-25f8-4566-a8cf-fe7eb6ba76a7" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="67f6f052-2c06-4f04-ad09-620bd6c5d555" name="CreateManipulator" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="750ceef2-beb0-4d4a-9841-da7860fc8578" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="ead55b50-9f9b-485f-ae19-353afd709116" name="ModelingProject">
+    <elementDefinition Id="adbacb30-6017-4fb6-80ad-2cbcc53d92b1" />
+  </package>
+</logicalClassDesignerModel>

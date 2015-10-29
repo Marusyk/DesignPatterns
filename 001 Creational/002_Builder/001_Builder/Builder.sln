@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{31A17A2A-E8DB-48E4-8A53-2FA56C637DCB}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingBuilder", "ModelingBuilder\ModelingBuilder.modelproj", "{E9CE48FC-6168-4FD9-93B6-922CF5E19C33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31A17A2A-E8DB-48E4-8A53-2FA56C637DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A17A2A-E8DB-48E4-8A53-2FA56C637DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A17A2A-E8DB-48E4-8A53-2FA56C637DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A17A2A-E8DB-48E4-8A53-2FA56C637DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9CE48FC-6168-4FD9-93B6-922CF5E19C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9CE48FC-6168-4FD9-93B6-922CF5E19C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9CE48FC-6168-4FD9-93B6-922CF5E19C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9CE48FC-6168-4FD9-93B6-922CF5E19C33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

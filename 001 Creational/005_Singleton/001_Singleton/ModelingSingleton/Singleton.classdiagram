@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2f6af3a9-087f-4179-83ce-ac3530401c22" name="Singleton" linkedPackageId="305b21ce-70a7-4786-b386-3087b3a07d70" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="1ff477c3-007d-4cf3-aca2-f36ccb96b045" name="Singleton" isAbstract="false" isLeaf="false" cachedFullName="ModelingSingleton::Singleton::Singleton">
+        <elementDefinition Id="e7d0961f-37ca-4315-8777-82b9f9dd2d9a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0f36339c-03ff-421a-96f5-1f5d62e26059" name="Singleton" isAbstract="false" isLeaf="false" cachedFullName="ModelingSingleton::Singleton::Singleton">
+        <elementDefinition Id="e7d0961f-37ca-4315-8777-82b9f9dd2d9a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="e8c5d093-4e2f-4233-b9be-6e2b989680e3" name="Singleton">
+        <elementDefinition Id="dc117864-b5dd-449e-b65e-7f2ad9888472" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="4f81f167-24f7-40cb-b404-b6f21a28a759" name="Singleton" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e7d0961f-37ca-4315-8777-82b9f9dd2d9a" />
+              <ownedAttributesInternal>
+                <property Id="06049423-5715-4e05-8b60-a9a536593b77" name="instance" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d623acfd-9859-41c1-84d6-916919946317" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ff477c3-007d-4cf3-aca2-f36ccb96b045" LastKnownName="Singleton" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="793ca94e-dac2-47ef-aaaa-84494ef74e67" name="Singleton" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="23b2849f-fd49-456b-bfb4-3259bb2f61e7" />
+                </operation>
+                <operation Id="49f3d4c3-1725-4e0f-8ad4-28fdfc31ed71" name="Instance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="66fbcecd-666d-4b9c-9c1a-3292d51498de" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cca55992-8be2-40bd-9e27-4673e0bda915" direction="Return">
+                        <elementDefinition Id="a79c23be-dd93-47a9-891e-d13b6f15aa7a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="0f36339c-03ff-421a-96f5-1f5d62e26059" LastKnownName="Singleton" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="305b21ce-70a7-4786-b386-3087b3a07d70" name="ModelingSingleton">
+    <elementDefinition Id="58fdf8c0-a286-455d-a0f0-172669fc6d92" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9f3b5f73-5325-4ba4-a042-17b534a4b48f">
+        <profileInstance Id="f16f383d-f847-4c50-838c-031e4928c776" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="49db7627-ce86-4fc2-828b-6e396c4f495c">
+        <profileInstance Id="151e8c87-6dca-439a-9c80-07f4ead14901" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

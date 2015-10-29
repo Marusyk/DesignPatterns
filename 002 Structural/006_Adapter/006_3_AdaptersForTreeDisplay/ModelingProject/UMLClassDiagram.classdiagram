@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="475f0084-51ed-4a32-929c-4da2ded6e2e2" name="UMLClassDiagram" linkedPackageId="ac74d854-aa14-4ac7-a988-90d0e791fa27" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="bcb52dce-2f64-4027-ae83-1ca394217baf" name="AdapterTreeDisplay">
+        <elementDefinition Id="2bbec6ec-bbf4-42a9-a0dc-9c59c5491abf" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="90decd70-302b-4fe2-88a1-ea90e144a518" name="TreeDisplay" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="928d2d02-0143-4395-84f4-ce7d9b8b9267" />
+              <generalsInternal>
+                <generalization Id="59e97c40-4edd-4d57-9dae-02a8120feec3" isSubstitutable="false">
+                  <classMoniker Id="92ba89e9-d9e1-4659-8a42-9d753febbbaa" LastKnownName="TreeView" />
+                  <elementDefinition Id="be3b548c-9577-4c37-80bf-28ae32b11a46" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="b910f534-1522-4f50-952b-7cf450116465" name="Display" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2db30b42-4edb-4487-b598-b728b6c45a41" />
+                </operation>
+                <operation Id="5fdc5838-5326-4b68-8706-c6ae30085449" name="DisplaySubdirectories" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7a40f79e-e65b-4b12-9968-4b6d69d08b03" />
+                </operation>
+                <operation Id="284ebcba-3a3b-499c-889e-216718e2107a" name="DisplayTypeMembers" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="80d8bd7e-0410-48db-abf4-267943ccae62" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="69eb662c-4b05-471e-bb7a-6e48f43f3fa3" name="DirectoryTreeDisplay" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ab2175ce-1f49-470d-8b97-4abf9e4f4bc5" />
+              <generalsInternal>
+                <generalization Id="0110002b-da9c-40fc-8d3b-fe9efb3c9f22" isSubstitutable="false">
+                  <classMoniker Id="90decd70-302b-4fe2-88a1-ea90e144a518" LastKnownName="TreeDisplay" />
+                  <elementDefinition Id="ecf256a4-820d-436e-a55c-ead582c0190f" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="d92c1d55-4b12-483e-b351-34f46389901c" isDerived="false" sourceEndRoleName="DirectoryTreeDisplay" targetEndRoleName="DirectoryInfo" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="e56e7ca1-6c2e-44e5-a66f-b0ee52e00e44" LastKnownName="DirectoryInfo" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="73caa0d7-4061-458b-87a0-7aefc256c597" name="DirectoryTreeDisplay" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="27ae262a-94e4-4bdf-a7f6-19d8e18326ff" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e8f3f015-7cf6-4e6b-babf-86b20537959a" name="DirectoryInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="efc82dc2-3cf1-478a-af83-7828d4531f5e" name="Lower" value="*">
+                            <elementDefinition Id="4c610af9-da21-4466-94fb-120db47217a4" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="10d9a258-c7a9-4de7-9ed9-9c0984127097" name="Upper" value="*">
+                            <elementDefinition Id="81acb16d-0a34-43a7-89ca-6443126d2b1c" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="482d47f6-65ca-43d6-b016-af0a0f68e734" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="f0a07acb-4c2d-4bbf-92e6-63590547b2c1" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c799efff-f8b5-4855-ba1c-7ea5047534a4" name="AssemblyTreeDisplay" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="25f41f73-e679-4530-865a-2bb9d33c7da1" />
+              <generalsInternal>
+                <generalization Id="05336f8d-3f89-435a-9989-d2aecb05ca6a" isSubstitutable="false">
+                  <classMoniker Id="90decd70-302b-4fe2-88a1-ea90e144a518" LastKnownName="TreeDisplay" />
+                  <elementDefinition Id="573853cd-2a74-426b-8499-032c8cc39b39" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="c2a736c3-f5f1-42e7-9d61-629bdff580f0" isDerived="false" sourceEndRoleName="AssemblyTreeDisplay" targetEndRoleName="Assembly" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="2667943b-ecdd-4eb1-83d6-e2f6a0f20d8b" LastKnownName="Assembly" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6ac7e7d2-e23e-4f59-8403-ef10314302bd" name="AssemblyTreeDisplay" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="e99d1082-7312-4e5c-8688-6ba3fd6c5dad" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="181cf2d1-2408-4e7e-aa92-b27f6702e9a0" name="Assembly" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="62b190fb-9838-4f24-af5c-8ee755383478" name="Lower" value="*">
+                            <elementDefinition Id="b86db993-0e79-4151-b57a-5d7b71b30b95" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="1d4c36f4-712f-4432-9baa-5d7de6aa1383" name="Upper" value="*">
+                            <elementDefinition Id="cdcecdcf-7746-48d7-b93f-8a9164078fac" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="10ebd1db-8646-4336-ba8c-514fc61def1c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="53c9b388-3d0b-4f8f-9170-1be1ca2b1c4c" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="00cb554d-5405-467f-89b1-0c3cebdebd24" name="System.Windows.Forms">
+        <elementDefinition Id="9324642e-4fb7-4e08-8416-e77653811940" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="92ba89e9-d9e1-4659-8a42-9d753febbbaa" name="TreeView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="599ad4c8-5608-47bd-beaa-750d034d9031" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="5efc9e02-1148-4f07-8562-976cf2f4c40f" name="System.Reflection">
+        <elementDefinition Id="dae904ac-c62d-4735-b250-4d865d8a1897" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="2667943b-ecdd-4eb1-83d6-e2f6a0f20d8b" name="Assembly" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4485350f-c43c-4458-be12-42b553bd9a53" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="a774cfec-670d-4df0-bbba-b405c22387e0" name="System.IO">
+        <elementDefinition Id="95f6387b-c378-480e-9a4e-4c68121c35e6" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="e56e7ca1-6c2e-44e5-a66f-b0ee52e00e44" name="DirectoryInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fd901a96-67d2-476a-ad86-a16df36aa80f" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="ac74d854-aa14-4ac7-a988-90d0e791fa27" name="ModelingProject">
+    <elementDefinition Id="f4f0a2f7-16e7-4e6d-8853-be2277e96caf" />
+    <profileInstances>
+      <packageHasProfileInstances Id="dc48110a-f282-46e0-9bca-4804e231f07c">
+        <profileInstance Id="8cf66d38-53ed-4d7b-8b7a-53b6219ee90e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="09646083-8d40-4ca6-a6b1-58d42099b556">
+        <profileInstance Id="10e6db3c-5973-4dde-8eb2-90bd5a3b10f3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

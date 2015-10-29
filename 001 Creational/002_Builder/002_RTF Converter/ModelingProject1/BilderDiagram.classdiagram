@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e099bf80-d356-41c1-a6ac-5bb74d8b024b" name="UMLClassDiagram1" linkedPackageId="c8e85488-72c3-4b00-a6bc-e923f28d6c65" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="4f8258b4-4b46-46b7-8124-bda857568018" name="RTF_Converter">
+        <elementDefinition Id="3f878615-7ae5-4352-9c2d-670426c1110f" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="56b4128f-1fd5-4bac-b7ee-fb27c5bf2d72" name="TextConverter" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4397db81-b611-4070-9025-63c4c138cd3f" />
+              <ownedOperationsInternal>
+                <operation Id="55ea9ffe-f827-42aa-a869-3da0bfb7811c" name="ConvertBold" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="14470536-a8b3-4143-a97f-d9f8458403c9" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1bd55fe7-9ec4-4e91-9777-6e9395d0f076" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="2531abc8-d085-4d99-92a4-e3a255dc8368" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="a3ac7789-f743-4126-aa34-beedff533973" name="ConvertItalic" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="84852d7b-2f69-4f3f-9693-3c20664757fe" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="759aa1c7-e5b1-4221-ae42-ba70d62e7576" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="95fbee19-746f-4c78-9e4a-394b8baa8158" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="bd87d2dc-d79c-44d2-8cbf-57038bd6d1af" name="ASCIIConverter" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5db0755b-c08b-41a9-b0a2-df6ceaa67bff" />
+              <suppliersInternal>
+                <dependency Id="ae431392-ee74-4433-92e4-01fac35c5041">
+                  <classMoniker Id="3d466ecf-0dfa-46ed-ab62-8b185fd52a4d" LastKnownName="ASCIIText" />
+                  <elementDefinition Id="6acb99f6-69be-4f69-928b-3dbeee6cd517" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="2ac3a107-cf37-4564-906a-9efc989fad49" isSubstitutable="false">
+                  <classMoniker Id="56b4128f-1fd5-4bac-b7ee-fb27c5bf2d72" LastKnownName="TextConverter" />
+                  <elementDefinition Id="1ed34f71-1e20-454e-a073-b133a19dbf5c" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="b2618225-6b8d-4d78-a6a5-7f3829721586" name="GetASCIIText" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2042aa18-a353-4735-a2c8-d33445d0c80e" />
+                </operation>
+                <operation Id="00d430f8-fe39-47e6-a83d-3f5e3dc98f1a" name="ConvertParagraph" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="58070c64-90f0-48b4-9fa6-5911ff8f18c2" />
+                </operation>
+                <operation Id="7770386b-7ede-43f2-be75-a91a932e4b3e" name="ConvertCharacter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="176bccfa-0d08-4e5e-9d0a-a3152b1dd557" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="49c55249-c0bc-406c-a613-4b1afe6eb813" name="char" direction="In" isUnique="false">
+                        <elementDefinition Id="c8b1d2bf-68cb-4acc-9f5e-2b7fcd0de490" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="69c5fbba-c9b9-4939-b996-eb90e6297a89" name="PDFConverter" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1cc6efa9-833b-46b6-93e5-f00f2fa429dd" />
+              <suppliersInternal>
+                <dependency Id="056fb23c-35f7-44d8-b600-33ef9e16f0ab">
+                  <classMoniker Id="bc3aba6a-baab-4aa4-a1c0-7955e82c762c" LastKnownName="PDFText" />
+                  <elementDefinition Id="2db666b1-786c-4a53-a65e-2327cdfa12d6" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="3661db64-f91d-4342-be23-308a9f2f2848" isSubstitutable="false">
+                  <classMoniker Id="56b4128f-1fd5-4bac-b7ee-fb27c5bf2d72" LastKnownName="TextConverter" />
+                  <elementDefinition Id="af2648fd-9c8e-45c6-808c-27ed339089d2" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="31aecada-2701-41ec-b668-b774aaf6099b" name="GetPDFText" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="53732df6-9e9e-42d0-a6b2-b09caa9c0bbc" />
+                </operation>
+                <operation Id="903d04f5-93ef-4094-a45e-8c54ea85e850" name="ConvertCharacter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2035dbd5-e0e7-4ef6-9ee2-092bd004c120" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="512fd698-8edc-4c56-a0c9-34cb39edf2be" name="char" direction="In" isUnique="false">
+                        <elementDefinition Id="19715fb8-0ed8-4098-bafb-8f2225719432" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="97028b55-74f3-45bc-bd66-1817cb9415f6" name="ConvertParagraph" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="564364ee-4eaa-4519-a7fc-a9ba892969e8" />
+                </operation>
+                <operation Id="11f27a17-8f9b-458f-a0c6-d46290a89ba1" name="ConvertBold" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0e099f7d-8099-4136-be51-36e77838cc4d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8b3cb9e9-fea0-438b-8621-73972f377a5b" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="83efe924-c2e4-4ced-823d-aa8c79922713" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="31532eff-5daf-4a28-b619-3e20ac18c0b7" name="ConvertItalic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bb06b4f4-aee9-4f71-86a6-707b4a409e4f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a23f31b2-40fa-409e-b777-2c3bc8e8db5b" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="368dbd61-deca-4585-ab2e-20af6ca1a87c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7c14a156-0148-4331-a2fe-9f42c47f11cc" name="TextWidgetConverter" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e170b825-0b73-4c1e-ad96-8bcef7fc3ac6" />
+              <suppliersInternal>
+                <dependency Id="0e299318-2a91-4b7d-9765-62c298a2378f">
+                  <classMoniker Id="65d51978-2049-418b-bfaf-6d548b8c731a" LastKnownName="TextWidget" />
+                  <elementDefinition Id="502391da-b56e-4c75-8318-0bce0a3952fb" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="9fef8098-2459-4c6f-906c-a0135ede7348" isSubstitutable="false">
+                  <classMoniker Id="56b4128f-1fd5-4bac-b7ee-fb27c5bf2d72" LastKnownName="TextConverter" />
+                  <elementDefinition Id="fd5add44-bafd-426d-a5b3-eed6fe0f1e3b" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="e394a02c-43f9-4f4f-bd95-9c5919ed2226" name="GetTextWidget" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="13110926-63b0-4704-bf02-dc7f95c4f932" />
+                </operation>
+                <operation Id="23d36284-d17d-41f5-8c3e-3354dd4fa1c8" name="ConvertCharacter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="111c722e-7159-4b20-955d-53e4e1fb58be" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="16a66181-adad-4d95-b7f1-c789cbd10c34" name="char" direction="In" isUnique="false">
+                        <elementDefinition Id="4f6fed2a-b15b-4c96-abf9-e6f91f41d708" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="cf06e582-8e76-4eed-9214-87029478ab3d" name="ConvertParagraph" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4db6d3ce-d0d6-4ccf-8d54-b8866a010930" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3d466ecf-0dfa-46ed-ab62-8b185fd52a4d" name="ASCIIText" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ca658dcf-f68b-4ae7-86dc-eaaeddd9c5e7" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="bc3aba6a-baab-4aa4-a1c0-7955e82c762c" name="PDFText" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5073badd-3fe3-4500-99a4-f14b16794e1a" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="65d51978-2049-418b-bfaf-6d548b8c731a" name="TextWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ee98a195-4696-415c-a85d-72f95d7a7132" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="472ee1c0-e85a-48a4-acef-1a9e08d82265" name="RTFReader" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9f066059-8646-4073-8fb8-eecca725993b" />
+              <targetEnds>
+                <association Id="e8254ad2-78f8-4dd5-8e35-5ca3b552609d" isDerived="false" sourceEndRoleName="RTFReader" targetEndRoleName="TextConverter" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="56b4128f-1fd5-4bac-b7ee-fb27c5bf2d72" LastKnownName="TextConverter" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="4d637ff0-913d-4e07-ba48-a538d7377030" name="RTFReader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="6c79ec70-a024-412e-89e2-7da221196769" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7700c723-9f6a-4642-b63f-feca7373d0f2" name="TextConverter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="01cf198a-27cd-49b2-ac96-cb2396d08831" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="dc7cb6e7-4c3a-4c2d-a40a-1e537ceeabeb" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="232fac23-ede2-4caa-a7db-c9bc5e312a5f" name="ParseRTF" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="05108a14-002e-4734-8cec-cb1c0698376c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c15a01d2-4a91-4595-a1df-b9b84991f046" name="string" direction="In" isUnique="false">
+                        <elementDefinition Id="190f8307-852f-49d1-ad46-c3c8fc7bbdff" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="c8e85488-72c3-4b00-a6bc-e923f28d6c65" name="ModelingProject1">
+    <elementDefinition Id="530a95b1-e4a3-4b47-9dec-fff2d577eaf5" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ab7bc22c-73ae-4267-8de9-dd2c3c43dc3a">
+        <profileInstance Id="e6743564-cc86-49d4-8028-76df2a4cdc46" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f59419da-a91e-47c6-8b95-69061529b9c6">
+        <profileInstance Id="093edcf0-072f-420b-95d8-bfd9245d79dc" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7bc0f93f-ac2f-4aeb-b302-0cc4d9f512ce">
+        <profileInstance Id="29d87be3-cd27-40e1-905e-cb933efba6e3" name="CSharpProfile">
+          <elementDefinition Id="b4ff2f81-692c-418a-b355-122a73965161" />
+        </profileInstance>
+        <elementDefinition Id="9adf8974-3ab1-426b-9193-23148c4fe4cf" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

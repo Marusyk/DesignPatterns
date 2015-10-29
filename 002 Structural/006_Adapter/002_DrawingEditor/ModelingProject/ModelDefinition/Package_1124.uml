@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b755db80-805e-47e7-95da-5d412d8630ed"
+  name="DrawingEditor" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="456dc155-568f-4834-8ac7-2dffeb39d97d">
+      <body>return text.GetExtent()</body>
+      <annotatedElements>
+        <classMoniker
+          Id="50d15e29-665b-4097-b976-07bbd26db185"
+          LastKnownName="TextShape"
+          LastKnownLocation="Package_1124.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="d16b474f-51fb-4b82-a1e3-56cf2f366141">
+      <body>return new TextManipulator();</body>
+      <annotatedElements>
+        <classMoniker
+          Id="50d15e29-665b-4097-b976-07bbd26db185"
+          LastKnownName="TextShape"
+          LastKnownLocation="Package_1124.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3da3fcd5-8379-4c74-b03f-4cf7b79ff0ff"
+        name="DrawingEditor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="8e490e7f-bfe4-474c-b822-727f5554f2e3"
+            isDerived="false"
+            sourceEndRoleName="DrawingEditor"
+            targetEndRoleName="Shape"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e1e080ad-8826-45bd-a547-172a3c03d6ac"
+              LastKnownName="Shape"
+              LastKnownLocation="Package_1124.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="48a4ea7c-da11-420b-a4e8-ae2ebef5c720"
+                  name="DrawingEditor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="55cd34d9-3211-40ee-8b5c-8a255e736fd7"
+                  name="Shape"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cc59c602-7e15-43e5-9370-3636ef2432f3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d7d2696e-a219-48f3-8206-7c5aef92e5b4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e1e080ad-8826-45bd-a547-172a3c03d6ac"
+        name="Shape"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="fa33a04a-c4d1-42b6-870f-216fccaf7e0e"
+            name="BoundingBox"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="250576b4-3099-4e84-8044-bba1b0ab8b50"
+            name="CreateManipulator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="50d15e29-665b-4097-b976-07bbd26db185"
+        name="TextShape"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="32dcd573-6cc4-4584-9297-25fe136a21d6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e1e080ad-8826-45bd-a547-172a3c03d6ac"
+              LastKnownName="Shape"
+              LastKnownLocation="Package_1124.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="676dd62d-f526-4bba-8d37-d4e023802cf3"
+            isDerived="false"
+            sourceEndRoleName="TextShape"
+            targetEndRoleName="TextView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="aa73371a-f0ba-48b6-bede-c561d787feba"
+              LastKnownName="TextView"
+              LastKnownLocation="Package_1124.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="558b530a-f9d2-4ccb-85b3-5af0346a6b94"
+                  name="TextShape"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c127c8fe-bcb1-4308-9148-f43dc735e7fc"
+                  name="TextView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="78732d1b-3590-40d4-a803-94646166cf27"
+            name="BoundingBox"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7be61b5c-0384-422a-915b-3c928f0a677f"
+            name="CreateManipulator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="aa73371a-f0ba-48b6-bede-c561d787feba"
+        name="TextView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="4e0b4841-4346-4099-a862-1fddc463770a"
+            name="GetExtent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="21f03812-ab19-4e8d-9ab4-6668f6401da9"
+        name="Line"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="dde4f54a-6010-4929-b103-f21b37f7a2d7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e1e080ad-8826-45bd-a547-172a3c03d6ac"
+              LastKnownName="Shape"
+              LastKnownLocation="Package_1124.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a1cfde20-6776-40d4-a732-e0ffd33efd88"
+            name="BoundingBox"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7c33737c-a32e-4678-b87a-b70512139d21"
+            name="CreateManipulator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

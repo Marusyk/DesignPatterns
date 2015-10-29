@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2868dcf1-a8d6-4861-ad53-8fb7085b4d5e"
+  name="sharpPDF"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="852ab23f-7cbc-4a2e-9e17-a788463a02fa"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DsharpPDF"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f60f1465-53e1-4bd9-a567-8f05f57abc20"
+        name="pdfDocument"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="28b03a2f-e34b-451a-9ff6-7a753efca630"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FCBS%2FPATTERNS%2FNew folder%2FBuilder%2FBuilder_Document_Converter%2FDocument_Converter%2Fbin%2FDebug%2FsharpPDF.dll&quot; Namespace%3DsharpPDF Type%3DpdfDocument"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f2e1c3f1-653d-4217-8b29-0e0550fb7c51"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1370a379-4d5b-4393-bee8-361da64cf808">
+                <propertyInstance
+                  Id="1b1de240-a877-4bea-bf2d-3b0b6ef4b2fc"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8173a9c2-1ae6-48c1-9e3f-63af6c94db07">
+                <propertyInstance
+                  Id="fecd419c-6dc2-4756-ac35-6303e665bf1a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9bd9d2b8-f460-4fa6-b689-f14ebcd93b03">
+                <propertyInstance
+                  Id="89097c67-237d-407a-9df7-2f430b3a5831"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e31de6f2-3c50-4d14-a8bb-ade8dcdf5478">
+                <propertyInstance
+                  Id="aa148579-2b36-4d24-85ce-616d6f074db5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5908f74-f2a9-4e73-ac49-5f1390fe6d85">
+                <propertyInstance
+                  Id="ae5d9f4b-5796-41a3-9ea0-163988a59d69"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="093bfae3-fef8-473b-abfe-8cf2c3397a3f"
+        LastKnownName="Fonts"
+        LastKnownLocation="Package2_1223.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6ec7cdf7-0986-4d29-9e57-3689dc14f5ab"
+        LastKnownName="Elements"
+        LastKnownLocation="Package3_1223.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

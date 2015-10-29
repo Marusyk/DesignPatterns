@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_Observer_Pull", "Observer\001_Observer_Pull.csproj", "{80D48257-E2BB-4380-9276-B18198C10B1D}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingObserver", "ModelingObserver\ModelingObserver.modelproj", "{5254AA5E-8E93-4763-B405-436830887191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_Observer_Push", "002_Observer_Push\002_Observer_Push.csproj", "{633B665E-2872-468A-9EF1-FAD04AB2B688}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80D48257-E2BB-4380-9276-B18198C10B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D48257-E2BB-4380-9276-B18198C10B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D48257-E2BB-4380-9276-B18198C10B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D48257-E2BB-4380-9276-B18198C10B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5254AA5E-8E93-4763-B405-436830887191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5254AA5E-8E93-4763-B405-436830887191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5254AA5E-8E93-4763-B405-436830887191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5254AA5E-8E93-4763-B405-436830887191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633B665E-2872-468A-9EF1-FAD04AB2B688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633B665E-2872-468A-9EF1-FAD04AB2B688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633B665E-2872-468A-9EF1-FAD04AB2B688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633B665E-2872-468A-9EF1-FAD04AB2B688}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

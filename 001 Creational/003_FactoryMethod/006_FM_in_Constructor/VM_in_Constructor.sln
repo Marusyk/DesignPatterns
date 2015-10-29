@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_VM_in_Constructor", "VM_in_Constructor\001_VM_in_Constructor.csproj", "{1698DF69-BABE-4A9B-A709-BEFC8660D745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_VM_in_Constructor", "VM_in_Constructor2\002_VM_in_Constructor.csproj", "{17FDC562-F3C2-4434-A78E-6DE1C28303E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1698DF69-BABE-4A9B-A709-BEFC8660D745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1698DF69-BABE-4A9B-A709-BEFC8660D745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1698DF69-BABE-4A9B-A709-BEFC8660D745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1698DF69-BABE-4A9B-A709-BEFC8660D745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FDC562-F3C2-4434-A78E-6DE1C28303E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FDC562-F3C2-4434-A78E-6DE1C28303E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FDC562-F3C2-4434-A78E-6DE1C28303E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FDC562-F3C2-4434-A78E-6DE1C28303E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

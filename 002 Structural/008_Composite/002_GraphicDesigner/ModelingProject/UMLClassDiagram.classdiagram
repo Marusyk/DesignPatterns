@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="30501e16-34e8-4a0c-a41b-77f38030ec28" name="UMLClassDiagram" linkedPackageId="ab99a238-f1e4-4ad3-b025-9c35e55833a6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="00014cd5-772f-44ca-995b-939ca2c68ba4" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="b961f8ec-65a4-49ba-a956-ee1e1175b567" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ed071992-005a-4aea-b28a-8a1f0e1d4201" name="IGraphic" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Package1::IGraphic">
+        <elementDefinition Id="890ffc2c-71b6-4b2a-b4a6-21027d0e4a64" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ad97d13c-d711-4656-8ca2-baaa041e9ad8" name="Composite">
+        <elementDefinition Id="bfdb5be4-e05b-4088-8fd1-ebd64b4861e6" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <Interface Id="e402d3c3-a71f-49aa-82cb-54c003881be1" name="IGraphic" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="890ffc2c-71b6-4b2a-b4a6-21027d0e4a64" />
+              <ownedOperations>
+                <operation Id="dea112f8-697c-4adf-8b7f-b7a1ec1eae9c" name="Draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="be3e3f3b-a9ad-40bf-b75f-3de9825dc8af" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="03b8afaa-bcef-4b05-9113-c8b845b3a8d6" name="Graphics device" direction="In" isUnique="false">
+                        <elementDefinition Id="9e235e83-d7c9-4ebb-aa69-f0c73ed25816" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="123ec4ac-944b-453e-b8e4-d0ddc9f17e31" direction="Return" isUnique="false">
+                        <elementDefinition Id="5a518de1-cc50-453f-8305-ed996f5eb3ac" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="73d78f53-6e70-48a4-9bb5-e96b00fc76ca" name="Add" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="741dcd47-e991-4bb3-94e0-02aeb5ac27dd" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1a1bb730-495a-4333-912b-9e19054bbff9" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="619226c1-b86b-4bfd-a53e-95c9d866e653" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="07f46af9-654f-4856-8014-175bb93efb25" direction="Return" isUnique="false">
+                        <elementDefinition Id="7cae32c8-8b7d-44ec-8e38-b9aa9f232f77" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="6acf4ed0-3c83-42d7-b88d-62c00a18b818" name="Remove" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e595a6e0-70b1-43ca-af47-34600a5ebc66" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cbf461be-1913-4a11-94b6-d1744d3ccc35" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="6af3a69c-290d-4636-9a38-81d486983aa4" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="423d62d7-0f65-4550-bbeb-50004c889e11" direction="Return" isUnique="false">
+                        <elementDefinition Id="576a9636-2fbc-49d2-b750-38e87844635e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="87c8bf16-f5f7-4e1b-9afc-874d9c8b8424" name="GetChild" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="af0ca4ff-2d16-4260-bcf6-7a7f34186317" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="17083143-798e-4765-82d0-936525325ef8" name="int child" direction="In" isUnique="false">
+                        <elementDefinition Id="07ce21dc-37e7-4357-994f-f454c49786b4" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e66d0ae2-7b21-41d7-8aab-61e9b8f57ff8" direction="Return" isUnique="false">
+                        <elementDefinition Id="0c69a1db-0fc8-45fb-aa5e-14bc6db76032" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="ed071992-005a-4aea-b28a-8a1f0e1d4201" LastKnownName="IGraphic" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0e25792c-a87f-4525-ac0b-01a24747d577" name="Rectangle" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6ab48dda-7ab1-42b4-ae6e-500ccb2d3060" />
+              <suppliersInternal>
+                <interfaceRealization Id="9cb5730c-6d82-4013-a61e-03e3bfd09eb5">
+                  <interfaceMoniker Id="e402d3c3-a71f-49aa-82cb-54c003881be1" LastKnownName="IGraphic" />
+                  <elementDefinition Id="41838607-9939-499b-8797-c5aca33cefda" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="ecb317f9-5463-4e9a-9f14-8b8e71d4fc3b" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="98798998-06c4-4295-94ca-d647b64ad6ab" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f762533d-0e1f-437a-bd0c-27887d8ebea7" name="Graphics device" direction="In" isUnique="false">
+                        <elementDefinition Id="ad78aa79-7d76-445d-87f5-255a9736a22c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a31cac12-1221-48f3-a0c7-a0bdd6eb32ac" direction="Return" isUnique="false">
+                        <elementDefinition Id="87cea2c7-7fc2-469f-b236-40aa840bc243" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="2a9ac01a-c1be-4bf2-8807-35fa3bf0197d" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="72e97b8d-f417-4118-99d6-8066d33e4c2f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9b244a84-deca-441d-845b-8f8380dcfcb6" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="3b275c53-8986-4769-b5b0-1ae3e277c001" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3ab2f709-2ca1-4ed4-9037-f5fb0d1390d2" direction="Return" isUnique="false">
+                        <elementDefinition Id="30cf9ad9-2263-42f0-982a-3786ff6f786e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="47f5cb76-bac1-4b4a-9567-d8ced4d64b30" name="Remove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="824c643c-5adf-4bc4-a64a-b21d3eb1d623" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c7887d1b-e3b4-4573-9518-76d7a8d7d0e9" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="f69ea2d0-b918-466d-a090-2b2be77ca0b6" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f216ff4f-4b77-4fc2-8af5-8cea163d83b3" direction="Return" isUnique="false">
+                        <elementDefinition Id="f2f7b8c7-58b7-42b9-aed5-cf6f9af3e0f3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f95569c7-a06f-4be2-8c50-bd09a487bd65" name="GetChild" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b2ccc644-3339-4455-a10e-017061e66869" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ae8d67c9-b946-4b81-9951-15f2e005a244" name="int child" direction="In" isUnique="false">
+                        <elementDefinition Id="a3016e02-a648-4a93-b4c9-06fa27c11bf7" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4f7fcf9e-57ec-446c-9050-d52d7429e1bf" direction="Return" isUnique="false">
+                        <elementDefinition Id="313e605b-6a7c-4a04-be39-13d26122c994" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="ed071992-005a-4aea-b28a-8a1f0e1d4201" LastKnownName="IGraphic" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="16d6aff6-72a6-4b7a-8922-5f6cd377be89" name="Text" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="560b70e4-2032-427e-9d91-6f52bf8b9008" />
+              <suppliersInternal>
+                <interfaceRealization Id="6cceff14-1641-4c06-bedf-6661bb2d4ca3">
+                  <interfaceMoniker Id="e402d3c3-a71f-49aa-82cb-54c003881be1" LastKnownName="IGraphic" />
+                  <elementDefinition Id="bf86b1bb-e937-44ad-832b-1e2aaf5b7e55" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="f293031e-01a2-40d3-8956-85bf7a3ab18f" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="18edd34c-0361-46fd-83b7-27a5f222c4c3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c44b7d7b-6ddf-464e-b6f6-aef4e7d356a1" name="Graphics device" direction="In" isUnique="false">
+                        <elementDefinition Id="96bac587-7314-4ff8-b8e3-c82cb3f64068" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="87b2acf0-50ea-4a4a-ad97-3e93670f38dc" direction="Return" isUnique="false">
+                        <elementDefinition Id="8498617a-41a2-4ec2-b68d-b3784b3b826b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="84c782c1-c07a-4138-af70-3b8b910e7cea" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="90ca2613-2425-471a-b011-4258bdc00556" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b42f1126-7694-4391-82a6-cc179ecf5af8" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="117d815f-93a8-4512-be77-d337169520ec" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="48cee3fc-e199-4271-9a9c-cfc9c7f94223" direction="Return" isUnique="false">
+                        <elementDefinition Id="e60a6577-3c46-4af2-a21c-27354aae87bb" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b4263069-1931-4c26-aa89-c88a717e2acc" name="Remove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="73302c44-2f40-4643-8c98-e3e6204e90f8" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6a2f9e74-1d75-4221-8af8-6ae4f4b90317" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="f1db562d-f0bd-4d66-98ab-6669e0a3d54c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="156c3f79-7c62-4755-84d4-fa1f9ac2db78" direction="Return" isUnique="false">
+                        <elementDefinition Id="951c451d-ee9e-4e16-bc94-7ad5226ed247" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="2b9a3b6c-a9b2-4309-9edf-821f67cac7a7" name="GetChild" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b46429a6-4f86-40b2-b1a7-df6a2a7653e1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e7dd2944-c751-4162-ba7f-c7f97ede4c0b" name="int child" direction="In" isUnique="false">
+                        <elementDefinition Id="a0e2fbe8-e8f1-443b-9f27-e3f93b7ba790" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5cbddd96-027a-4bdb-ad66-f5a02d8e0536" direction="Return" isUnique="false">
+                        <elementDefinition Id="97b67dc4-aeed-4dbc-b9df-32d2fa55da11" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="ed071992-005a-4aea-b28a-8a1f0e1d4201" LastKnownName="IGraphic" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1a93b36b-cb24-467d-b300-b4002256dfac" name="Picture" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5046d8b7-6ce4-4aca-8c0f-37fd536238d2" />
+              <suppliersInternal>
+                <interfaceRealization Id="12ae7b05-33dd-4a84-a290-8474aaba55a9">
+                  <interfaceMoniker Id="e402d3c3-a71f-49aa-82cb-54c003881be1" LastKnownName="IGraphic" />
+                  <elementDefinition Id="bc036ae2-52f2-46d4-ad36-7bf03b0d76cd" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="ea8730d8-8979-41a9-90e3-353b1f8b52b4" isDerived="false" sourceEndRoleName="Picture" targetEndRoleName="IGraphic" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="e402d3c3-a71f-49aa-82cb-54c003881be1" LastKnownName="IGraphic" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="5b57a0f7-be7f-4e96-8369-718e12a27718" name="Picture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="3c000174-fe3b-4bd1-948b-4cfe9afef981" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="59a332a0-5f19-45c9-a027-d995165aaa6a" name="IGraphic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="1d602ad5-b21e-4f47-a8ff-3e1bb7f735c8" name="Lower" value="*">
+                            <elementDefinition Id="b50e5987-01eb-4468-9e5d-c2f8da52b3ab" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="999757f4-2da2-4cb4-b473-aa0464720005" name="Upper" value="*">
+                            <elementDefinition Id="8ef2b17d-b958-4204-aaad-6cb518670590" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="dd40dedd-6fb6-4ee4-b476-c8de53530485" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="02ea32c8-c8c3-47eb-a752-98a9cffac17d" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="33ae4ebb-e652-4c8d-bfe8-6f434fa115b9" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ef19b1c2-d595-4c3c-8ec7-e099e55cd32d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="50709f47-b232-4f44-adab-d5510e7c06fe" name="Graphics device" direction="In" isUnique="false">
+                        <elementDefinition Id="ece4e6c5-6fee-49c1-83f4-afee074b3954" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4bced227-ba50-4da0-80df-045e9e1dba39" direction="Return" isUnique="false">
+                        <elementDefinition Id="b1bae3fa-def1-4f70-958c-b442757cd25f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="a43ef200-3253-44b9-95c3-640dcf708a64" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="81a0b770-e4e0-437b-b33c-b4fcb4d2c7cb" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1d4518b5-da2b-4ad3-a302-7ecf8b73db1a" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="eb80d4b4-3641-448a-a69b-36b55fcc2b61" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="68007796-5838-4805-be47-e93a35985da5" direction="Return" isUnique="false">
+                        <elementDefinition Id="0fdb2581-a0a3-4f30-920e-d2a4f1102be3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="d621447a-15c8-4918-b1b2-a0a1548260a3" name="Remove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="20adacd3-2722-45d6-bc6a-8992b949fa65" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fb7d6a5c-97b0-4ab7-a4a8-721d3f38484e" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="a6897cf5-92ca-4bef-9d14-ef3f68eac670" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a389c1cf-2f66-4391-9d0e-507887cf79c8" direction="Return" isUnique="false">
+                        <elementDefinition Id="e2e291a1-74d3-466c-8295-2e5b7c49dfb4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f3e055e3-e36c-4163-a8f5-1d93e639903e" name="GetChild" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d88aa9cf-18c5-4053-ba97-f1d3dac053fa" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2c03ba47-56bb-41a4-ae57-3c9ce75985a1" name="int child" direction="In" isUnique="false">
+                        <elementDefinition Id="581a3641-8f44-4efe-9b23-9806b333c9eb" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ffeeedae-129b-4518-acc1-3090532a5227" direction="Return" isUnique="false">
+                        <elementDefinition Id="9709ff3a-b24e-4749-9ba0-313529defdef" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="ed071992-005a-4aea-b28a-8a1f0e1d4201" LastKnownName="IGraphic" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9b592b42-3f34-42bb-b95e-2526aefa9080" name="Line" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="78ac0827-d677-4ceb-9754-f941b5dc1eb0" />
+              <suppliersInternal>
+                <interfaceRealization Id="3bf8087d-ffc8-4653-b80f-82c520692550">
+                  <interfaceMoniker Id="e402d3c3-a71f-49aa-82cb-54c003881be1" LastKnownName="IGraphic" />
+                  <elementDefinition Id="f964d3b6-82d8-469c-adcf-bb7d8e5eaead" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="472291e2-b60e-44e9-82d2-dffe1bbab5ab" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ea4540a6-19a8-4686-92ca-661a6127c971" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="baf86616-b6fa-4f84-b1fe-de7aeaf71ab9" name="Graphics device" direction="In" isUnique="false">
+                        <elementDefinition Id="32af6bb4-97e3-43ae-9887-1a491c672528" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0476f728-3259-48e3-9269-711dcf7e6a97" direction="Return" isUnique="false">
+                        <elementDefinition Id="1a541a3c-2939-4b93-94e2-8c92b7970971" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="7c9d04fa-56f9-4e68-86df-c9fdb4c22a70" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4d4743c4-7db1-41fb-a914-3225b6485abe" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bcd46cda-2b1e-40c6-8d27-3bd6dffff836" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="8bb56c50-46c6-436e-ad6f-dec24d79c663" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8363c599-661a-44db-9bbd-b74a48f0b93b" direction="Return" isUnique="false">
+                        <elementDefinition Id="0f0212e9-3f27-4f39-a805-2266570798b2" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="dd2615f8-0257-4e35-a187-d8b6807f58e4" name="Remove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="32dbe1d9-aee4-4932-b666-d6bf43b25976" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ed2bb293-6c8d-4b3b-b97f-c7cfd1b6083b" name="IGraphic graphic" direction="In" isUnique="false">
+                        <elementDefinition Id="b47f9b63-f83e-42a1-a349-0c7032a08aab" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="15a8e46a-812b-4fc4-81ee-516d5ea37fe9" direction="Return" isUnique="false">
+                        <elementDefinition Id="4f4f382e-5cd3-455c-b7b5-6f6ec033627e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="00014cd5-772f-44ca-995b-939ca2c68ba4" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="49fdbb2d-8e39-4003-b59e-7ad252d95f73" name="GetChild" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f9eb1815-c386-4353-9753-bbc0fd9f284c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="80a13769-9fec-495a-86fc-12a82c8b825f" name="int child" direction="In" isUnique="false">
+                        <elementDefinition Id="b721c4ab-8c0f-4b9a-859d-a21700201520" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b4c6c65d-47a2-495d-90ce-ba5d7a1a5da2" direction="Return" isUnique="false">
+                        <elementDefinition Id="a326464a-89dd-4390-89a2-db8234855248" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="ed071992-005a-4aea-b28a-8a1f0e1d4201" LastKnownName="IGraphic" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="ab99a238-f1e4-4ad3-b025-9c35e55833a6" name="ModelingProject">
+    <elementDefinition Id="a0dfa522-ed04-413b-aa6d-2bc1054c699e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9d87f6bb-5bf5-4d21-87d0-915fa1175e47">
+        <profileInstance Id="066064cd-539d-416c-8a58-69c5910938c8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c4286b8b-a3b2-45bf-9222-12f3c4db4f85">
+        <profileInstance Id="ee8e9012-f5d6-42ef-ae81-b2d3ed107256" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

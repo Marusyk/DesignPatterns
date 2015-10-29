@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e3b21e57-91a9-4d2c-85b1-d245fe1d9cef" name="Command" linkedPackageId="5664642f-f049-404a-9df8-502d4a49a569" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="4e77958e-e005-4b50-8e5f-b8e637cb6a56" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="724c4fd8-f52a-4d81-8c21-1b68c426e4b6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e370418a-98b7-4108-95c0-daa231cb46b9" name="Command" isAbstract="false" isLeaf="false" cachedFullName="Command">
+        <elementDefinition Id="ced6881c-b3ba-4a53-93f2-0852d2050652" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bd08c643-ec70-4a68-bd38-0a89579a2398" name="Receiver" isAbstract="false" isLeaf="false" cachedFullName="ModelingCommand::Command::Receiver">
+        <elementDefinition Id="593b2640-904d-438e-b3fe-b7bc03347e83" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="66577906-1231-4dca-bd71-04dcd14800a0" name="Command">
+        <elementDefinition Id="fb179a5f-3317-4ac3-838c-71b8e9b781f4" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="5af15a1d-9547-4e55-b828-8234351f302a" name="Invoker" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1f5592c2-47a4-42ad-ac5f-3c3e6156c436" />
+              <targetEnds>
+                <association Id="122d6ed2-5462-4c9f-aba7-3c7ad4a3b435" isDerived="false" sourceEndRoleName="Invoker" targetEndRoleName="Command" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="0cd9814f-8903-4ea0-94dd-0c6a4e3fd2f2" LastKnownName="Command" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a9cc4f66-db10-405b-a155-7e21d2b72eb9" name="Invoker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="b71bdbfd-1535-4462-94e8-5c611f26b535" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1f4ff173-3df5-4de4-8cc4-bb26674ddafb" name="Command" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="5d6a2e03-f5f7-4499-bfec-503364ec9d6a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="36ab7fb8-46b6-402b-a869-3f39a48d7c45" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="2d434d2b-b00b-4a47-8b6a-42b71fabc4ca" name="command" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="79a3624e-1f94-40b3-bb2b-ce1cfc49260d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e370418a-98b7-4108-95c0-daa231cb46b9" LastKnownName="Command" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="5b2fe22d-c472-4795-ad4d-f2f151cfde72" name="SetCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="927a2103-8cf5-4915-b9c1-43daf8ccc04c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="11f8453e-e030-484c-b716-6bc0aff58744" name="Command command" direction="In" isUnique="false">
+                        <elementDefinition Id="7f5d4c1d-3514-4daf-9ebe-7b7721911683" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f220c1dc-b225-459d-96a1-f59d9f03f4cc" direction="Return" isUnique="false">
+                        <elementDefinition Id="ceaec6a3-4ec6-4283-8d68-b96fa8d19c0e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4e77958e-e005-4b50-8e5f-b8e637cb6a56" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="56d12b41-02d7-400a-b44f-03eb32cf06b5" name="ExecuteCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e8563755-95df-41e4-812e-5b764b44a99c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bb3c2898-fa2e-4340-8baf-880149cbbe1a" direction="Return" isUnique="false">
+                        <elementDefinition Id="b9bfd1f4-f92e-4ef8-92da-06e85275b4dd" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4e77958e-e005-4b50-8e5f-b8e637cb6a56" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="fe0b79eb-c640-4289-9217-23a5b5d40649" name="Receiver" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="593b2640-904d-438e-b3fe-b7bc03347e83" />
+              <ownedOperationsInternal>
+                <operation Id="90b41944-f920-4cd9-82d6-51e6d03bf939" name="Action" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="40fe4a8f-244e-4c67-aee1-818b25e48040" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3f59645e-757e-47b4-8ef9-d49b31e991bf" direction="Return" isUnique="false">
+                        <elementDefinition Id="7da74f49-3329-4fc7-a7af-cc7094306849" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4e77958e-e005-4b50-8e5f-b8e637cb6a56" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0cd9814f-8903-4ea0-94dd-0c6a4e3fd2f2" name="Command" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="463ecf43-bf74-4a11-9369-9d5f3db6b41f" />
+              <ownedAttributesInternal>
+                <property Id="d422ee0c-4799-48b8-ae2f-5b15367f03c1" name="receiver" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eda92f24-6cc2-48e7-a61c-f5f3b69da798" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bd08c643-ec70-4a68-bd38-0a89579a2398" LastKnownName="Receiver" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="041e7633-cc72-4eb8-a8c6-740239d7684d" name="Command" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d042b046-1d64-4d94-b5f7-9a9391f8528d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c6a7180d-9eff-4d57-a55f-ae7b9b1955b1" name="Receiver receiver" direction="In" isUnique="false">
+                        <elementDefinition Id="7a4e0a93-5272-4e26-9554-01b7290e9c27" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="cf1748b2-9601-4a62-b334-b72444a58584" name="Execute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="dccdb51c-7b34-4f50-b5e7-2844db3e5172" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="09cbdbf4-79ad-4d8a-8763-4c6a13ffab1e" direction="Return" isUnique="false">
+                        <elementDefinition Id="8c822c6b-c64e-4500-bfb1-e7e324913b57" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4e77958e-e005-4b50-8e5f-b8e637cb6a56" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="964c199c-d054-4444-a0af-6f7b6a66d53a" name="ConcreteCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="daeb27a5-97c7-4687-aeef-710f820e234a" />
+              <generalsInternal>
+                <generalization Id="1f4b4676-dd3e-49d4-a25d-af0f9bd7c341" isSubstitutable="false">
+                  <classMoniker Id="0cd9814f-8903-4ea0-94dd-0c6a4e3fd2f2" LastKnownName="Command" />
+                  <elementDefinition Id="db832fb1-77de-4e29-89dd-c4fb9258a4bc" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="780c3c7e-bb79-493d-8b9b-c73657746ccf" isDerived="false" sourceEndRoleName="ConcreteCommand" targetEndRoleName="Receiver" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="fe0b79eb-c640-4289-9217-23a5b5d40649" LastKnownName="Receiver" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c32f33a8-cfe9-4d88-a487-3f2ec6cae3e9" name="ConcreteCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="963ba7a7-4fa2-4cf4-b83f-7c699c6ae6ed" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="09920529-2fa6-46cb-89e6-da414491bc1e" name="Receiver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ae5151ed-23fc-446c-b6f6-064e5243194f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="8fae0769-9b61-4dd6-94ab-e92e29e4f66e" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="7e6cbe04-dfa5-4257-8ca6-1cb5bdb299d0" name="ConcreteCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c960f7a8-79b1-4e8f-bcda-b4eaffe002fc" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="893986a1-889a-4b7d-8f68-4c37b05325d0" name="Receiver receiver" direction="In" isUnique="false">
+                        <elementDefinition Id="cd4689ca-4b14-4100-ab0d-782623d536ba" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="d636134e-34b7-4907-a8b6-3fb7fd22f38f" name="Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="08b18b08-55a0-4bc0-9f01-aefcec331d88" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="78bd01e2-4ff6-4ab0-af39-cef37327ff3f" direction="Return" isUnique="false">
+                        <elementDefinition Id="5505f7b8-b575-4774-ae61-80986c4ec0a5" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4e77958e-e005-4b50-8e5f-b8e637cb6a56" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d1184691-ec1f-4174-80de-86ac506ffabe" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="3bbc2daa-4b69-40b6-92ea-9c58655a6ea2" />
+              <suppliersInternal>
+                <dependency Id="cd5c7c7a-681e-424b-bea6-b784d0f1b090">
+                  <classMoniker Id="964c199c-d054-4444-a0af-6f7b6a66d53a" LastKnownName="ConcreteCommand" />
+                  <elementDefinition Id="744b5c45-7d8a-4e82-8df6-d3c7b0b8cd14" />
+                </dependency>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="964de697-4a34-4470-901f-1f4f34c0dc9e" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Receiver" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="fe0b79eb-c640-4289-9217-23a5b5d40649" LastKnownName="Receiver" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="96413bcf-6b49-499c-bfa5-dc7f67e24479" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="d239559c-93a5-4403-83e7-d8545bfdbe93" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="195164ed-8987-4754-9d63-fed80517d487" name="Receiver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="51de791d-3853-4ad3-a6aa-86c619a6519a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="dd9bbf80-e5dd-41c8-bfd8-03375eca729e" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="5f096974-e462-4429-a12f-8bc1e42b513e" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3c35fa8c-3508-4948-8f97-2815fe89554a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="75bcd41b-1684-4361-ba71-f0b31c85190d" direction="Return" isUnique="false">
+                        <elementDefinition Id="8e9033c4-b648-4838-b48d-780f5d3d583d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4e77958e-e005-4b50-8e5f-b8e637cb6a56" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="5664642f-f049-404a-9df8-502d4a49a569" name="ModelingCommand">
+    <elementDefinition Id="7db924a8-6fb2-404a-9903-ed14acbd92f7" />
+    <profileInstances>
+      <packageHasProfileInstances Id="12f47f85-2abe-43f5-84ef-c08100fdae50">
+        <profileInstance Id="ad10ded9-4782-46f6-9deb-d04e2ba47c4f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="277f42c0-3242-4792-aab5-9470ff58fc8e">
+        <profileInstance Id="1ddb355e-f95e-4026-85c1-7e64105da582" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
